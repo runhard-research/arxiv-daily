@@ -1,0 +1,27 @@
+name: "Vision + Robotics"
+tag: "vision_ro"
+
+query:
+  categories:
+    - "cs.CV"
+    - "cs.RO"
+  max_results: 40
+
+filter:
+  keywords:
+    - "object detection"
+    - "visual perception"
+    - "robot"
+    - "grasp"
+    - "manipulation"
+    - "visual"
+
+  must:
+    - "vision"
+
+  exclude:
+    - "medical"
+    - "remote sensing"
+
+  min_year: 2024
+

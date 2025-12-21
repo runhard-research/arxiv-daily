@@ -1,0 +1,20 @@
+name: "Computer Vision"
+tag: "vision"
+
+query:
+  category: "cs.CV"
+  max_results: 20
+
+filter:
+  keywords:
+    - "object detection"
+    - "segmentation"
+
+  must:
+    - "vision"
+
+  exclude:
+    - "medical"
+
+  min_year: 2024
+
