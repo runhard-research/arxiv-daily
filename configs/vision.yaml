@@ -7,14 +7,51 @@ query:
 
 filter:
   keywords:
+    - "computer vision"
+    - "vision"
+    - "image understanding"
+    - "visual recognition"
     - "object detection"
-    - "segmentation"
+    - "instance segmentation"
+    - "semantic segmentation"
+    - "panoptic segmentation"
+    - "object tracking"
+    - "multi-object tracking"
+    - "optical flow"
+    - "motion estimation"
+    - "3D vision"
+    - "3D reconstruction"
+    - "depth estimation"
+    - "multi-view geometry"
+    - "SLAM"
+    - "NeRF"
+    - "Gaussian Splatting"
+    - "representation learning"
+    - "self-supervised learning"
+    - "contrastive learning"
+    - "foundation model"
+    - "vision transformer"
+    - "ViT"
+    - "image generation"
+    - "diffusion model"
+    - "text-to-image"
+    - "multimodal"
+    - "video understanding"
+    - "action recognition"
+    - "video segmentation"
 
   must:
     - "vision"
+    - "image"
 
   exclude:
     - "medical"
+    - "radiology"
+    - "ultrasound"
+    - "MRI"
+    - "CT"
+    - "pathology"
+    - "microscopy"
 
   min_year: 2024
 
