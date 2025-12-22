@@ -5,6 +5,9 @@ on:
     - cron: "0 1 * * *"   # 毎日 10:00 JST
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update-arxiv:
     runs-on: ubuntu-latest
