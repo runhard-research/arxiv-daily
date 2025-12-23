@@ -1,57 +1,58 @@
 # arXiv Daily Papers
 
-_Last updated: 2025-12-22_
+_Last updated: 2025-12-23_
 
 ---
 
 ## Computer Vision
 <!-- START:vision -->
-- **Chorus: Multi-Teacher Pretraining for Holistic 3D Gaussian Scene Encoding**  
-  http://arxiv.org/abs/2512.17817v1
+_No papers found._
 <!-- END:vision -->
 
 ## Large Language Models
 <!-- START:llm -->
-- **ShareChat: A Dataset of Chatbot Conversations in the Wild**  
-  http://arxiv.org/abs/2512.17843v1
-- **DEER: A Comprehensive and Reliable Benchmark for Deep-Research Expert Reports**  
-  http://arxiv.org/abs/2512.17776v1
-- **AdvJudge-Zero: Binary Decision Flips in LLM-as-a-Judge via Adversarial Control Tokens**  
-  http://arxiv.org/abs/2512.17375v1
-- **Large Language Models as Pokémon Battle Agents: Strategic Play and Content Generation**  
-  http://arxiv.org/abs/2512.17308v1
-- **Seed-Prover 1.5: Mastering Undergraduate-Level Theorem Proving via Learning from Experience**  
-  http://arxiv.org/abs/2512.17260v1
-- **Mindscape-Aware Retrieval Augmented Generation for Improved Long Context Understanding**  
-  http://arxiv.org/abs/2512.17220v1
+- **Bottom-up Policy Optimization: Your Language Model Policy Secretly Contains Internal Policies**  
+  http://arxiv.org/abs/2512.19673v1
+- **Exploring Zero-Shot ACSA with Unified Meaning Representation in Chain-of-Thought Prompting**  
+  http://arxiv.org/abs/2512.19651v1
+- **Increasing the Thinking Budget is Not All You Need**  
+  http://arxiv.org/abs/2512.19585v1
+- **A Large-Language-Model Framework for Automated Humanitarian Situation Reporting**  
+  http://arxiv.org/abs/2512.19475v1
+- **Epistemological Fault Lines Between Human and Artificial Intelligence**  
+  http://arxiv.org/abs/2512.19466v1
+- **From Retrieval to Reasoning: A Framework for Cyber Threat Intelligence NER with Explicit and Adaptive Instructions**  
+  http://arxiv.org/abs/2512.19414v1
+- **Auto-Prompting with Retrieval Guidance for Frame Detection in Logistics**  
+  http://arxiv.org/abs/2512.19247v1
+- **ChemATP: A Training-Free Chemical Reasoning Framework for Large Language Models**  
+  http://arxiv.org/abs/2512.19240v1
+- **AWPO: Enhancing Tool-Use of Large Language Models through Explicit Integration of Reasoning Rewards**  
+  http://arxiv.org/abs/2512.19126v1
 <!-- END:llm -->
 
 ## Multimodal (MLLM)
 <!-- START:mllm -->
-- **AdaptPrompt: Parameter-Efficient Adaptation of VLMs for Generalizable Deepfake Detection**  
-  http://arxiv.org/abs/2512.17730v1
-- **Generative Human-Object Interaction Detection via Differentiable Cognitive Steering of Multi-modal LLMs**  
-  http://arxiv.org/abs/2512.17640v1
-- **PathFLIP: Fine-grained Language-Image Pretraining for Versatile Computational Pathology**  
-  http://arxiv.org/abs/2512.17621v1
+- **MapTrace: Scalable Data Generation for Route Tracing on Maps**  
+  http://arxiv.org/abs/2512.19609v1
+- **CASA: Cross-Attention via Self-Attention for Efficient Vision-Language Fusion**  
+  http://arxiv.org/abs/2512.19535v1
 <!-- END:mllm -->
 
 ## Vision + Robotics
 <!-- START:vision_ro -->
-- **Dexterous World Models**  
-  http://arxiv.org/abs/2512.17907v1
-- **Adversarial Robustness of Vision in Open Foundation Models**  
-  http://arxiv.org/abs/2512.17902v1
-- **Keypoint Counting Classifiers: Turning Vision Transformers into Self-Explainable Models Without Training**  
-  http://arxiv.org/abs/2512.17891v1
-- **Pix2NPHM: Learning to Regress NPHM Reconstructions From a Single Image**  
-  http://arxiv.org/abs/2512.17773v1
-- **UniStateDLO: Unified Generative State Estimation and Tracking of Deformable Linear Objects Under Occlusion for Constrained Manipulation**  
-  http://arxiv.org/abs/2512.17764v1
-- **AdaptPrompt: Parameter-Efficient Adaptation of VLMs for Generalizable Deepfake Detection**  
-  http://arxiv.org/abs/2512.17730v1
-- **Generative Human-Object Interaction Detection via Differentiable Cognitive Steering of Multi-modal LLMs**  
-  http://arxiv.org/abs/2512.17640v1
-- **PathFLIP: Fine-grained Language-Image Pretraining for Versatile Computational Pathology**  
-  http://arxiv.org/abs/2512.17621v1
+- **Pushing the Frontier of Audiovisual Perception with Large-Scale Multimodal Correspondence Learning**  
+  http://arxiv.org/abs/2512.19687v1
+- **VA-$π$: Variational Policy Alignment for Pixel-Aware Autoregressive Generation**  
+  http://arxiv.org/abs/2512.19680v1
+- **MapTrace: Scalable Data Generation for Route Tracing on Maps**  
+  http://arxiv.org/abs/2512.19609v1
+- **REALM: A Real-to-Sim Validated Benchmark for Generalization in Robotic Manipulation**  
+  http://arxiv.org/abs/2512.19562v1
+- **CASA: Cross-Attention via Self-Attention for Efficient Vision-Language Fusion**  
+  http://arxiv.org/abs/2512.19535v1
+- **SlicerOrbitSurgerySim: An Open-Source Platform for Virtual Registration and Quantitative Comparison of Preformed Orbital Plates**  
+  http://arxiv.org/abs/2512.19534v1
+- **MaP-AVR: A Meta-Action Planner for Agents Leveraging Vision Language Models and Retrieval-Augmented Generation**  
+  http://arxiv.org/abs/2512.19453v1
 <!-- END:vision_ro -->
