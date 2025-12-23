@@ -39,10 +39,12 @@ filter:
     - "video understanding"
     - "action recognition"
     - "video segmentation"
+    - "image"
+    - "3D"
+    - "reconstruction"
 
   must:
     - "vision"
-    - "image"
 
   exclude:
     - "medical"
