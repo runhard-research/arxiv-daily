@@ -43,8 +43,6 @@ filter:
     - "3D"
     - "reconstruction"
 
-  must:
-    - "vision"
 
   exclude:
     - "medical"
