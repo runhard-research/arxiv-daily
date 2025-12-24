@@ -6,7 +6,8 @@ _Last updated: 2025-12-24_
 
 ## Computer Vision
 <!-- START:vision -->
-_No papers found._
+- **UTDesign: A Unified Framework for Stylized Text Editing and Generation in Graphic Design Images**  
+  http://arxiv.org/abs/2512.20479v1
 <!-- END:vision -->
 
 ## Large Language Models
