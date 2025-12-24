@@ -1,6 +1,6 @@
 # arXiv Daily Papers
 
-_Last updated: 2025-12-23_
+_Last updated: 2025-12-24_
 
 ---
 
@@ -11,48 +11,54 @@ _No papers found._
 
 ## Large Language Models
 <!-- START:llm -->
-- **Bottom-up Policy Optimization: Your Language Model Policy Secretly Contains Internal Policies**  
-  http://arxiv.org/abs/2512.19673v1
-- **Exploring Zero-Shot ACSA with Unified Meaning Representation in Chain-of-Thought Prompting**  
-  http://arxiv.org/abs/2512.19651v1
-- **Increasing the Thinking Budget is Not All You Need**  
-  http://arxiv.org/abs/2512.19585v1
-- **A Large-Language-Model Framework for Automated Humanitarian Situation Reporting**  
-  http://arxiv.org/abs/2512.19475v1
-- **Epistemological Fault Lines Between Human and Artificial Intelligence**  
-  http://arxiv.org/abs/2512.19466v1
-- **From Retrieval to Reasoning: A Framework for Cyber Threat Intelligence NER with Explicit and Adaptive Instructions**  
-  http://arxiv.org/abs/2512.19414v1
-- **Auto-Prompting with Retrieval Guidance for Frame Detection in Logistics**  
-  http://arxiv.org/abs/2512.19247v1
-- **ChemATP: A Training-Free Chemical Reasoning Framework for Large Language Models**  
-  http://arxiv.org/abs/2512.19240v1
-- **AWPO: Enhancing Tool-Use of Large Language Models through Explicit Integration of Reasoning Rewards**  
-  http://arxiv.org/abs/2512.19126v1
+- **Automated stereotactic radiosurgery planning using a human-in-the-loop reasoning large language model agent**  
+  http://arxiv.org/abs/2512.20586v1
+- **Can LLMs Solve My Grandma's Riddle? Evaluating Multilingual Large Language Models on Reasoning Traditional Bangla Tricky Riddles**  
+  http://arxiv.org/abs/2512.20324v1
+- **AprielGuard**  
+  http://arxiv.org/abs/2512.20293v1
+- **Learning to Reason in LLMs by Expectation Maximization**  
+  http://arxiv.org/abs/2512.20169v1
+- **Multi-hop Reasoning via Early Knowledge Alignment**  
+  http://arxiv.org/abs/2512.20144v1
+- **Reason2Decide: Rationale-Driven Multi-Task Learning**  
+  http://arxiv.org/abs/2512.20074v1
+- **Schoenfeld's Anatomy of Mathematical Reasoning by Language Models**  
+  http://arxiv.org/abs/2512.19995v1
 <!-- END:llm -->
 
 ## Multimodal (MLLM)
 <!-- START:mllm -->
-- **MapTrace: Scalable Data Generation for Route Tracing on Maps**  
-  http://arxiv.org/abs/2512.19609v1
-- **CASA: Cross-Attention via Self-Attention for Efficient Vision-Language Fusion**  
-  http://arxiv.org/abs/2512.19535v1
+- **FlashVLM: Text-Guided Visual Token Selection for Large Multimodal Models**  
+  http://arxiv.org/abs/2512.20561v1
+- **Learning to Reason in 4D: Dynamic Spatial Understanding for Vision Language Models**  
+  http://arxiv.org/abs/2512.20557v1
+- **Multi-Grained Text-Guided Image Fusion for Multi-Exposure and Multi-Focus Scenarios**  
+  http://arxiv.org/abs/2512.20556v1
+- **Chain-of-Anomaly Thoughts with Large Vision-Language Models**  
+  http://arxiv.org/abs/2512.20417v1
+- **Generative Digital Twins: Vision-Language Simulation Models for Executable Industrial Systems**  
+  http://arxiv.org/abs/2512.20387v1
+- **CRAFT: Continuous Reasoning and Agentic Feedback Tuning for Multimodal Text-to-Image Generation**  
+  http://arxiv.org/abs/2512.20362v1
 <!-- END:mllm -->
 
 ## Vision + Robotics
 <!-- START:vision_ro -->
-- **Pushing the Frontier of Audiovisual Perception with Large-Scale Multimodal Correspondence Learning**  
-  http://arxiv.org/abs/2512.19687v1
-- **VA-$π$: Variational Policy Alignment for Pixel-Aware Autoregressive Generation**  
-  http://arxiv.org/abs/2512.19680v1
-- **MapTrace: Scalable Data Generation for Route Tracing on Maps**  
-  http://arxiv.org/abs/2512.19609v1
-- **REALM: A Real-to-Sim Validated Benchmark for Generalization in Robotic Manipulation**  
-  http://arxiv.org/abs/2512.19562v1
-- **CASA: Cross-Attention via Self-Attention for Efficient Vision-Language Fusion**  
-  http://arxiv.org/abs/2512.19535v1
-- **SlicerOrbitSurgerySim: An Open-Source Platform for Virtual Registration and Quantitative Comparison of Preformed Orbital Plates**  
-  http://arxiv.org/abs/2512.19534v1
-- **MaP-AVR: A Meta-Action Planner for Agents Leveraging Vision Language Models and Retrieval-Augmented Generation**  
-  http://arxiv.org/abs/2512.19453v1
+- **LongVideoAgent: Multi-Agent Reasoning with Long Videos**  
+  http://arxiv.org/abs/2512.20618v1
+- **LightTact: A Visual-Tactile Fingertip Sensor for Deformation-Independent Contact Sensing**  
+  http://arxiv.org/abs/2512.20591v1
+- **FlashVLM: Text-Guided Visual Token Selection for Large Multimodal Models**  
+  http://arxiv.org/abs/2512.20561v1
+- **Multi-Grained Text-Guided Image Fusion for Multi-Exposure and Multi-Focus Scenarios**  
+  http://arxiv.org/abs/2512.20556v1
+- **Drift-Corrected Monocular VIO and Perception-Aware Planning for Autonomous Drone Racing**  
+  http://arxiv.org/abs/2512.20475v1
+- **Beyond Motion Pattern: An Empirical Study of Physical Forces for Human Motion Understanding**  
+  http://arxiv.org/abs/2512.20451v1
+- **Generative Digital Twins: Vision-Language Simulation Models for Executable Industrial Systems**  
+  http://arxiv.org/abs/2512.20387v1
+- **CRAFT: Continuous Reasoning and Agentic Feedback Tuning for Multimodal Text-to-Image Generation**  
+  http://arxiv.org/abs/2512.20362v1
 <!-- END:vision_ro -->
