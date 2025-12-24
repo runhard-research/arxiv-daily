@@ -27,6 +27,17 @@ def fetch_arxiv(categories, max_results):
     r.raise_for_status()
     return r.text
 
+def summarize_abstract_first_n(abstract: str, n: int = 2):
+    """
+    Extract first n sentences from abstract.
+    """
+    if not abstract:
+        return []
+
+    text = abstract.replace("\n", " ").strip()
+    sentences = re.split(r'(?<=[.!?])\s+', text)
+    return sentences[:n]
+
 
 def parse_entries(xml_text):
     ns = {"a": "http://www.w3.org/2005/Atom"}
@@ -77,7 +88,17 @@ def apply_filter(entries, flt):
 def build_markdown(entries):
     lines = []
     for e in entries:
-        lines.append(f"- **{e['title']}**  \n  {e['link']}")
+        summary_lines = summarize_abstract_first_n(e["summary"], n=2)
+
+        lines.append(f"### {e['title']}")
+        lines.append(f"- **arXiv**: {e['link']}")
+        lines.append(f"- **Summary**:")
+
+        for s in summary_lines:
+            lines.append(f"  - {s}")
+
+        lines.append("")  # 空行
+
     return "\n".join(lines) if lines else "_No papers found._"
 
 
