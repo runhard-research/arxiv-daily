@@ -5,7 +5,16 @@ import re
 from datetime import datetime
 from xml.etree import ElementTree as ET
 
+SEEN_ARXIV_IDS = set()
 ARXIV_API = "http://export.arxiv.org/api/query"
+
+def extract_arxiv_id(link: str):
+    """
+    http://arxiv.org/abs/2512.19673v1
+    → 2512.19673
+    """
+    m = re.search(r'arxiv\.org/abs/([0-9]+\.[0-9]+)', link)
+    return m.group(1) if m else None
 
 
 def load_config(path):
@@ -84,6 +93,22 @@ def apply_filter(entries, flt):
 
     return result
 
+def deduplicate_by_first_seen(entries):
+    deduped = []
+
+    for e in entries:
+        arxiv_id = extract_arxiv_id(e["link"])
+        if not arxiv_id:
+            continue
+
+        if arxiv_id in SEEN_ARXIV_IDS:
+            continue  # すでに別分野で採用済み
+
+        SEEN_ARXIV_IDS.add(arxiv_id)
+        deduped.append(e)
+
+    return deduped
+
 
 def build_markdown(entries):
     lines = []
@@ -147,7 +172,8 @@ def main(cfg_path):
 
     entries = parse_entries(xml)
     filtered = apply_filter(entries, cfg.get("filter", {}))
-    md = build_markdown(filtered)
+    deduped = deduplicate_by_first_seen(filtered)
+    md = build_markdown(deduped)
 
     update_readme(cfg["tag"], md)
     print(f"[OK] Updated section: {cfg['tag']} ({len(filtered)} papers)")
