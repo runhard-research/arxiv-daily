@@ -1,93 +1,148 @@
 # arXiv Daily Papers
 
-_Last updated: 2025-12-24_
+_Last updated: 2025-12-25_
 
 ---
 
 ## Computer Vision
 <!-- START:vision -->
-- **UTDesign: A Unified Framework for Stylized Text Editing and Generation in Graphic Design Images**  
-  http://arxiv.org/abs/2512.20479v1
+_No papers found._
 <!-- END:vision -->
 
 ## Large Language Models
 <!-- START:llm -->
-### Automated stereotactic radiosurgery planning using a human-in-the-loop reasoning large language model agent
-- **arXiv**: http://arxiv.org/abs/2512.20586v1
+### ReaSeq: Unleashing World Knowledge via Reasoning for Sequential Modeling
+- **arXiv**: http://arxiv.org/abs/2512.21257v1
 - **Summary**:
-  - Stereotactic radiosurgery (SRS) demands precise dose shaping around critical structures, yet black-box AI systems have limited clinical adoption due to opacity concerns.
-  - We tested whether chain-of-thought reasoning improves agentic planning in a retrospective cohort of 41 patients with brain metastases treated with 18 Gy single-fraction SRS.
+  - Industrial recommender systems face two fundamental limitations under the log-driven paradigm: (1) knowledge poverty in ID-based item representations that causes brittle interest modeling under data sparsity, and (2) systemic blindness to beyond-log user interests that constrains model performance within platform boundaries.
+  - These limitations stem from an over-reliance on shallow interaction statistics and close-looped feedback while neglecting the rich world knowledge about product semantics and cross-domain behavioral patterns that Large Language Models have learned from vast corpora.
 
-### Can LLMs Solve My Grandma's Riddle? Evaluating Multilingual Large Language Models on Reasoning Traditional Bangla Tricky Riddles
-- **arXiv**: http://arxiv.org/abs/2512.20324v1
+### Rethinking Supervised Fine-Tuning: Emphasizing Key Answer Tokens for Improved LLM Accuracy
+- **arXiv**: http://arxiv.org/abs/2512.21017v1
 - **Summary**:
-  - Large Language Models (LLMs) show impressive performance on many NLP benchmarks, yet their ability to reason in figurative, culturally grounded, and low-resource settings remains underexplored.
-  - We address this gap for Bangla by introducing BanglaRiddleEval, a benchmark of 1,244 traditional Bangla riddles instantiated across four tasks (4,976 riddle-task artifacts in total).
+  - With the rapid advancement of Large Language Models (LLMs), the Chain-of-Thought (CoT) component has become significant for complex reasoning tasks.
+  - However, in conventional Supervised Fine-Tuning (SFT), the model could allocate disproportionately more attention to CoT sequences with excessive length.
 
-### AprielGuard
-- **arXiv**: http://arxiv.org/abs/2512.20293v1
+### Automatic Replication of LLM Mistakes in Medical Conversations
+- **arXiv**: http://arxiv.org/abs/2512.20983v1
 - **Summary**:
-  - Safeguarding large language models (LLMs) against unsafe or adversarial behavior is critical as they are increasingly deployed in conversational and agentic settings.
-  - Existing moderation tools often treat safety risks (e.g.
+  - Large language models (LLMs) are increasingly evaluated in clinical settings using multi-dimensional rubrics which quantify reasoning quality, safety, and patient-centeredness.
+  - Yet, replicating specific mistakes in other LLM models is not straightforward and often requires manual effort.
 
-### Learning to Reason in LLMs by Expectation Maximization
-- **arXiv**: http://arxiv.org/abs/2512.20169v1
+### Reflection Pretraining Enables Token-Level Self-Correction in Biological Sequence Models
+- **arXiv**: http://arxiv.org/abs/2512.20954v1
 - **Summary**:
-  - Large language models (LLMs) solve reasoning problems by first generating a rationale and then answering.
-  - We formalize reasoning as a latent variable model and derive an expectation-maximization (EM) objective for learning to reason.
+  - Chain-of-Thought (CoT) prompting has significantly advanced task-solving capabilities in natural language processing with large language models.
+  - Unlike standard prompting, CoT encourages the model to generate intermediate reasoning steps, non-answer tokens, that help guide the model toward more accurate final outputs.
 
-### Multi-hop Reasoning via Early Knowledge Alignment
-- **arXiv**: http://arxiv.org/abs/2512.20144v1
+### Where Did This Sentence Come From? Tracing Provenance in LLM Reasoning Distillation
+- **arXiv**: http://arxiv.org/abs/2512.20908v1
 - **Summary**:
-  - Retrieval-Augmented Generation (RAG) has emerged as a powerful paradigm for Large Language Models (LLMs) to address knowledge-intensive queries requiring domain-specific or up-to-date information.
-  - To handle complex multi-hop questions that are challenging for single-step retrieval, iterative RAG approaches incorporating reinforcement learning have been proposed.
+  - Reasoning distillation has attracted increasing attention.
+  - It typically leverages a large teacher model to generate reasoning paths, which are then used to fine-tune a student model so that it mimics the teacher's behavior in training contexts.
 
-### Reason2Decide: Rationale-Driven Multi-Task Learning
-- **arXiv**: http://arxiv.org/abs/2512.20074v1
+### MediEval: A Unified Medical Benchmark for Patient-Contextual and Knowledge-Grounded Reasoning in LLMs
+- **arXiv**: http://arxiv.org/abs/2512.20822v1
 - **Summary**:
-  - Despite the wide adoption of Large Language Models (LLM)s, clinical decision support systems face a critical challenge: achieving high predictive accuracy while generating explanations aligned with the predictions.
-  - Current approaches suffer from exposure bias leading to misaligned explanations.
+  - Large Language Models (LLMs) are increasingly applied to medicine, yet their adoption is limited by concerns over reliability and safety.
+  - Existing evaluations either test factual medical knowledge in isolation or assess patient-level reasoning without verifying correctness, leaving a critical gap.
 
-### Schoenfeld's Anatomy of Mathematical Reasoning by Language Models
-- **arXiv**: http://arxiv.org/abs/2512.19995v1
+### Semantic Deception: When Reasoning Models Can't Compute an Addition
+- **arXiv**: http://arxiv.org/abs/2512.20812v1
 - **Summary**:
-  - Large language models increasingly expose reasoning traces, yet their underlying cognitive structure and steps remain difficult to identify and analyze beyond surface-level statistics.
-  - We adopt Schoenfeld's Episode Theory as an inductive, intermediate-scale lens and introduce ThinkARM (Anatomy of Reasoning in Models), a scalable framework that explicitly abstracts reasoning traces into functional reasoning steps such as Analysis, Explore, Implement, Verify, etc.
+  - Large language models (LLMs) are increasingly used in situations where human values are at stake, such as decision-making tasks that involve reasoning when performed by humans.
+  - We investigate the so-called reasoning capabilities of LLMs over novel symbolic representations by introducing an experimental framework that tests their ability to process and manipulate unfamiliar symbols.
 
 <!-- END:llm -->
 
 ## Multimodal (MLLM)
 <!-- START:mllm -->
-- **FlashVLM: Text-Guided Visual Token Selection for Large Multimodal Models**  
-  http://arxiv.org/abs/2512.20561v1
-- **Learning to Reason in 4D: Dynamic Spatial Understanding for Vision Language Models**  
-  http://arxiv.org/abs/2512.20557v1
-- **Multi-Grained Text-Guided Image Fusion for Multi-Exposure and Multi-Focus Scenarios**  
-  http://arxiv.org/abs/2512.20556v1
-- **Chain-of-Anomaly Thoughts with Large Vision-Language Models**  
-  http://arxiv.org/abs/2512.20417v1
-- **Generative Digital Twins: Vision-Language Simulation Models for Executable Industrial Systems**  
-  http://arxiv.org/abs/2512.20387v1
-- **CRAFT: Continuous Reasoning and Agentic Feedback Tuning for Multimodal Text-to-Image Generation**  
-  http://arxiv.org/abs/2512.20362v1
+### Beyond Memorization: A Multi-Modal Ordinal Regression Benchmark to Expose Popularity Bias in Vision-Language Models
+- **arXiv**: http://arxiv.org/abs/2512.21337v1
+- **Summary**:
+  - We expose a significant popularity bias in state-of-the-art vision-language models (VLMs), which achieve up to 34% higher accuracy on famous buildings compared to ordinary ones, indicating a reliance on memorization over generalizable understanding.
+  - To systematically investigate this, we introduce the largest open benchmark for this task: the YearGuessr dataset, a collection of 55,546 building images with multi-modal attributes from 157 countries, annotated with continuous ordinal labels of their construction year (1001-2024), GPS data, and page-view counts as a proxy for popularity.
+
+### Leveraging Lightweight Entity Extraction for Scalable Event-Based Image Retrieval
+- **arXiv**: http://arxiv.org/abs/2512.21221v1
+- **Summary**:
+  - Retrieving images from natural language descriptions is a core task at the intersection of computer vision and natural language processing, with wide-ranging applications in search engines, media archiving, and digital content management.
+  - However, real-world image-text retrieval remains challenging due to vague or context-dependent queries, linguistic variability, and the need for scalable solutions.
+
+### RoboSafe: Safeguarding Embodied Agents via Executable Safety Logic
+- **arXiv**: http://arxiv.org/abs/2512.21220v1
+- **Summary**:
+  - Embodied agents powered by vision-language models (VLMs) are increasingly capable of executing complex real-world tasks, yet they remain vulnerable to hazardous instructions that may trigger unsafe behaviors.
+  - Runtime safety guardrails, which intercept hazardous actions during task execution, offer a promising solution due to their flexibility.
+
+### Latent Implicit Visual Reasoning
+- **arXiv**: http://arxiv.org/abs/2512.21218v1
+- **Summary**:
+  - While Large Multimodal Models (LMMs) have made significant progress, they remain largely text-centric, relying on language as their core reasoning modality.
+  - As a result, they are limited in their ability to handle reasoning tasks that are predominantly visual.
+
+### VisRes Bench: On Evaluating the Visual Reasoning Capabilities of VLMs
+- **arXiv**: http://arxiv.org/abs/2512.21194v1
+- **Summary**:
+  - Vision-Language Models (VLMs) have achieved remarkable progress across tasks such as visual question answering and image captioning.
+  - Yet, the extent to which these models perform visual reasoning as opposed to relying on linguistic priors remains unclear.
+
+### MarineEval: Assessing the Marine Intelligence of Vision-Language Models
+- **arXiv**: http://arxiv.org/abs/2512.21126v1
+- **Summary**:
+  - We have witnessed promising progress led by large language models (LLMs) and further vision language models (VLMs) in handling various queries as a general-purpose assistant.
+  - VLMs, as a bridge to connect the visual world and language corpus, receive both visual content and various text-only user instructions to generate corresponding responses.
+
 <!-- END:mllm -->
 
 ## Vision + Robotics
 <!-- START:vision_ro -->
-- **LongVideoAgent: Multi-Agent Reasoning with Long Videos**  
-  http://arxiv.org/abs/2512.20618v1
-- **LightTact: A Visual-Tactile Fingertip Sensor for Deformation-Independent Contact Sensing**  
-  http://arxiv.org/abs/2512.20591v1
-- **FlashVLM: Text-Guided Visual Token Selection for Large Multimodal Models**  
-  http://arxiv.org/abs/2512.20561v1
-- **Multi-Grained Text-Guided Image Fusion for Multi-Exposure and Multi-Focus Scenarios**  
-  http://arxiv.org/abs/2512.20556v1
-- **Drift-Corrected Monocular VIO and Perception-Aware Planning for Autonomous Drone Racing**  
-  http://arxiv.org/abs/2512.20475v1
-- **Beyond Motion Pattern: An Empirical Study of Physical Forces for Human Motion Understanding**  
-  http://arxiv.org/abs/2512.20451v1
-- **Generative Digital Twins: Vision-Language Simulation Models for Executable Industrial Systems**  
-  http://arxiv.org/abs/2512.20387v1
-- **CRAFT: Continuous Reasoning and Agentic Feedback Tuning for Multimodal Text-to-Image Generation**  
-  http://arxiv.org/abs/2512.20362v1
+### Fast SAM2 with Text-Driven Token Pruning
+- **arXiv**: http://arxiv.org/abs/2512.21333v1
+- **Summary**:
+  - Segment Anything Model 2 (SAM2), a vision foundation model has significantly advanced in prompt-driven video object segmentation, yet their practical deployment remains limited by the high computational and memory cost of processing dense visual tokens across time.
+  - The SAM2 pipelines typically propagate all visual tokens produced by the image encoder through downstream temporal reasoning modules, regardless of their relevance to the target object, resulting in reduced scalability due to quadratic memory attention overhead.
+
+### ACD: Direct Conditional Control for Video Diffusion Models via Attention Supervision
+- **arXiv**: http://arxiv.org/abs/2512.21268v1
+- **Summary**:
+  - Controllability is a fundamental requirement in video synthesis, where accurate alignment with conditioning signals is essential.
+  - Existing classifier-free guidance methods typically achieve conditioning indirectly by modeling the joint distribution of data and conditions, which often results in limited controllability over the specified conditions.
+
+### LookPlanGraph: Embodied Instruction Following Method with VLM Graph Augmentation
+- **arXiv**: http://arxiv.org/abs/2512.21243v1
+- **Summary**:
+  - Methods that use Large Language Models (LLM) as planners for embodied instruction following tasks have become widespread.
+  - To successfully complete tasks, the LLM must be grounded in the environment in which the robot operates.
+
+### RoboSafe: Safeguarding Embodied Agents via Executable Safety Logic
+- **arXiv**: http://arxiv.org/abs/2512.21220v1
+- **Summary**:
+  - Embodied agents powered by vision-language models (VLMs) are increasingly capable of executing complex real-world tasks, yet they remain vulnerable to hazardous instructions that may trigger unsafe behaviors.
+  - Runtime safety guardrails, which intercept hazardous actions during task execution, offer a promising solution due to their flexibility.
+
+### Latent Implicit Visual Reasoning
+- **arXiv**: http://arxiv.org/abs/2512.21218v1
+- **Summary**:
+  - While Large Multimodal Models (LMMs) have made significant progress, they remain largely text-centric, relying on language as their core reasoning modality.
+  - As a result, they are limited in their ability to handle reasoning tasks that are predominantly visual.
+
+### VisRes Bench: On Evaluating the Visual Reasoning Capabilities of VLMs
+- **arXiv**: http://arxiv.org/abs/2512.21194v1
+- **Summary**:
+  - Vision-Language Models (VLMs) have achieved remarkable progress across tasks such as visual question answering and image captioning.
+  - Yet, the extent to which these models perform visual reasoning as opposed to relying on linguistic priors remains unclear.
+
+### ORCA: Object Recognition and Comprehension for Archiving Marine Species
+- **arXiv**: http://arxiv.org/abs/2512.21150v1
+- **Summary**:
+  - Marine visual understanding is essential for monitoring and protecting marine ecosystems, enabling automatic and scalable biological surveys.
+  - However, progress is hindered by limited training data and the lack of a systematic task formulation that aligns domain-specific marine challenges with well-defined computer vision tasks, thereby limiting effective model application.
+
+### MarineEval: Assessing the Marine Intelligence of Vision-Language Models
+- **arXiv**: http://arxiv.org/abs/2512.21126v1
+- **Summary**:
+  - We have witnessed promising progress led by large language models (LLMs) and further vision language models (VLMs) in handling various queries as a general-purpose assistant.
+  - VLMs, as a bridge to connect the visual world and language corpus, receive both visual content and various text-only user instructions to generate corresponding responses.
+
 <!-- END:vision_ro -->
