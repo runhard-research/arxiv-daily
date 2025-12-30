@@ -1,6 +1,6 @@
 # arXiv Daily Papers
 
-_Last updated: 2025-12-29_
+_Last updated: 2025-12-30_
 
 ---
 
@@ -11,102 +11,120 @@ _No papers found._
 
 ## Large Language Models
 <!-- START:llm -->
-### Accelerate Speculative Decoding with Sparse Computation in Verification
-- **arXiv**: http://arxiv.org/abs/2512.21911v1
+### The Big Three in Marriage Talk: LLM-Assisted Analysis of Moral Ethics and Sentiment on Weibo and Xiaohongshu
+- **arXiv**: http://arxiv.org/abs/2512.23609v1
 - **Summary**:
-  - Speculative decoding accelerates autoregressive language model inference by verifying multiple draft tokens in parallel.
-  - However, the verification stage often becomes the dominant computational bottleneck, especially for long-context inputs and mixture-of-experts (MoE) models.
+  - China's marriage registrations have declined dramatically, dropping from 13.47 million couples in 2013 to 6.1 million in 2024.
+  - Understanding public attitudes toward marriage requires examining not only emotional sentiment but also the moral reasoning underlying these evaluations.
 
-### CricBench: A Multilingual Benchmark for Evaluating LLMs in Cricket Analytics
-- **arXiv**: http://arxiv.org/abs/2512.21877v1
+### C2PO: Diagnosing and Disentangling Bias Shortcuts in LLMs
+- **arXiv**: http://arxiv.org/abs/2512.23430v1
 - **Summary**:
-  - Cricket is the second most popular sport globally, commanding a massive following of over 2.5 billion fans globally.
-  - Enthusiasts and analysts frequently seek advanced statistical insights, such as long-term historical performance trends or complex player comparisons, that are often unavailable through standard web searches.
+  - Bias in Large Language Models (LLMs) poses significant risks to trustworthiness, manifesting primarily as stereotypical biases (e.g., gender or racial stereotypes) and structural biases (e.g., lexical overlap or position preferences).
+  - However, prior paradigms typically address these in isolation, often mitigating one at the expense of exacerbating the other.
 
-### HeartBench: Probing Core Dimensions of Anthropomorphic Intelligence in LLMs
-- **arXiv**: http://arxiv.org/abs/2512.21849v1
+### A Stepwise-Enhanced Reasoning Framework for Large Language Models Based on External Subgraph Generation
+- **arXiv**: http://arxiv.org/abs/2512.23356v1
 - **Summary**:
-  - While Large Language Models (LLMs) have achieved remarkable success in cognitive and reasoning benchmarks, they exhibit a persistent deficit in anthropomorphic intelligence-the capacity to navigate complex social, emotional, and ethical nuances.
-  - This gap is particularly acute in the Chinese linguistic and cultural context, where a lack of specialized evaluation frameworks and high-quality socio-emotional data impedes progress.
+  - Large Language Models (LLMs) have achieved strong performance across a wide range of natural language processing tasks in recent years, including machine translation, text generation, and question answering.
+  - As their applications extend to increasingly complex scenarios, however, LLMs continue to face challenges in tasks that require deep reasoning and logical inference.
 
-### Knowledge Reasoning of Large Language Models Integrating Graph-Structured Information for Pest and Disease Control in Tobacco
-- **arXiv**: http://arxiv.org/abs/2512.21837v1
+### CubeBench: Diagnosing Interactive, Long-Horizon Spatial Reasoning Under Partial Observations
+- **arXiv**: http://arxiv.org/abs/2512.23328v1
 - **Summary**:
-  - This paper proposes a large language model (LLM) approach that integrates graph-structured information for knowledge reasoning in tobacco pest and disease control.
-  - Built upon the GraphRAG framework, the proposed method enhances knowledge retrieval and reasoning by explicitly incorporating structured information from a domain-specific knowledge graph.
-
-### Do Latent Tokens Think? A Causal and Adversarial Analysis of Chain-of-Continuous-Thought
-- **arXiv**: http://arxiv.org/abs/2512.21711v1
-- **Summary**:
-  - Latent tokens are gaining attention for enhancing reasoning in large language models (LLMs), yet their internal mechanisms remain unclear.
-  - This paper examines the problem from a reliability perspective, uncovering fundamental weaknesses: latent tokens function as uninterpretable placeholders rather than encoding faithful reasoning.
+  - Large Language Model (LLM) agents, while proficient in the digital realm, face a significant gap in physical-world deployment due to the challenge of forming and maintaining a robust spatial mental model.
+  - We identify three core cognitive challenges hindering this transition: spatial reasoning, long-horizon state tracking via mental simulation, and active exploration under partial observation.
 
 <!-- END:llm -->
 
 ## Multimodal (MLLM)
 <!-- START:mllm -->
-### See Less, See Right: Bi-directional Perceptual Shaping For Multimodal Reasoning
-- **arXiv**: http://arxiv.org/abs/2512.22120v1
+### Same or Not? Enhancing Visual Perception in Vision-Language Models
+- **arXiv**: http://arxiv.org/abs/2512.23592v1
 - **Summary**:
-  - Large vision-language models (VLMs) often benefit from intermediate visual cues, either injected via external tools or generated as latent visual tokens during reasoning, but these mechanisms still overlook fine-grained visual evidence (e.g., polylines in charts), generalize poorly across domains, and incur high inference-time cost.
-  - In this paper, we propose Bi-directional Perceptual Shaping (BiPS), which transforms question-conditioned masked views into bidirectional where-to-look signals that shape perception during training.
+  - Vision-language models (VLMs) excel at broad visual understanding but remain coarse-grained, exhibit visual biases, and miss subtle visual details.
+  - Existing training corpora reinforce this limitation by emphasizing general recognition ("Is it a cat or a dog?") over fine-grained perception.
 
-### LongFly: Long-Horizon UAV Vision-and-Language Navigation with Spatiotemporal Context Integration
-- **arXiv**: http://arxiv.org/abs/2512.22010v1
+### ProGuard: Towards Proactive Multimodal Safeguard
+- **arXiv**: http://arxiv.org/abs/2512.23573v1
 - **Summary**:
-  - Unmanned aerial vehicles (UAVs) are crucial tools for post-disaster search and rescue, facing challenges such as high information density, rapid changes in viewpoint, and dynamic structures, especially in long-horizon navigation.
-  - However, current UAV vision-and-language navigation(VLN) methods struggle to model long-horizon spatiotemporal context in complex environments, resulting in inaccurate semantic alignment and unstable path planning.
+  - The rapid evolution of generative models has led to a continuous emergence of multimodal safety risks, exposing the limitations of existing defense methods.
+  - To address these challenges, we propose ProGuard, a vision-language proactive guard that identifies and describes out-of-distribution (OOD) safety risks without the need for model adjustments required by traditional reactive approaches.
 
-### Look Closer! An Adversarial Parametric Editing Framework for Hallucination Mitigation in VLMs
-- **arXiv**: http://arxiv.org/abs/2512.21999v1
+### Instruction-Following Evaluation of Large Vision-Language Models
+- **arXiv**: http://arxiv.org/abs/2512.23572v1
 - **Summary**:
-  - While Vision-Language Models (VLMs) have garnered increasing attention in the AI community due to their promising practical applications, they exhibit persistent hallucination issues, generating outputs misaligned with visual inputs.
-  - Recent studies attribute these hallucinations to VLMs' over-reliance on linguistic priors and insufficient visual feature integration, proposing heuristic decoding calibration strategies to mitigate them.
+  - Following the initial flourishing of large language models (LLMs), there has been a surge in proposed large vision-language models (LVLMs) that integrate LLMs with vision capabilities.
+  - However, it has been observed that LVLMs, after tuning to visual instruction using commonly used training datasets, often fail to exhibit the instruction-following ability that was present in the LLM before integration, leading to results in which they do not follow task instructions as expected.
 
-### LVLM-Aided Alignment of Task-Specific Vision Models
-- **arXiv**: http://arxiv.org/abs/2512.21985v1
+### PathFound: An Agentic Multimodal Model Activating Evidence-seeking Pathological Diagnosis
+- **arXiv**: http://arxiv.org/abs/2512.23545v1
 - **Summary**:
-  - In high-stakes domains, small task-specific vision models are crucial due to their low computational requirements and the availability of numerous methods to explain their results.
-  - However, these explanations often reveal that the models do not align well with human domain knowledge, relying instead on spurious correlations.
+  - Recent pathological foundation models have substantially advanced visual representation learning and multimodal interaction.
+  - However, most models still rely on a static inference paradigm in which whole-slide images are processed once to produce predictions, without reassessment or targeted evidence acquisition under ambiguous diagnoses.
 
-### Training-free Conditional Image Embedding Framework Leveraging Large Vision Language Models
-- **arXiv**: http://arxiv.org/abs/2512.21860v1
+### Automated river gauge plate reading using a hybrid object detection and generative AI framework in the Limpopo River Basin
+- **arXiv**: http://arxiv.org/abs/2512.23454v1
 - **Summary**:
-  - Conditional image embeddings are feature representations that focus on specific aspects of an image indicated by a given textual condition (e.g., color, genre), which has been a challenging problem.
-  - Although recent vision foundation models, such as CLIP, offer rich representations of images, they are not designed to focus on a specified condition.
+  - Accurate and continuous monitoring of river water levels is essential for flood forecasting, water resource management, and ecological protection.
+  - Traditional hydrological observation methods are often limited by manual measurement errors and environmental constraints.
+
+### CoFi-Dec: Hallucination-Resistant Decoding via Coarse-to-Fine Generative Feedback in Large Vision-Language Models
+- **arXiv**: http://arxiv.org/abs/2512.23453v1
+- **Summary**:
+  - Large Vision-Language Models (LVLMs) have achieved impressive progress in multi-modal understanding and generation.
+  - However, they still tend to produce hallucinated content that is inconsistent with the visual input, which limits their reliability in real-world applications.
 
 <!-- END:mllm -->
 
 ## Vision + Robotics
 <!-- START:vision_ro -->
-### See Less, See Right: Bi-directional Perceptual Shaping For Multimodal Reasoning
-- **arXiv**: http://arxiv.org/abs/2512.22120v1
+### Scalable Residual Feature Aggregation Framework with Hybrid Metaheuristic Optimization for Robust Early Pancreatic Neoplasm Detection in Multimodal CT Imaging
+- **arXiv**: http://arxiv.org/abs/2512.23597v1
 - **Summary**:
-  - Large vision-language models (VLMs) often benefit from intermediate visual cues, either injected via external tools or generated as latent visual tokens during reasoning, but these mechanisms still overlook fine-grained visual evidence (e.g., polylines in charts), generalize poorly across domains, and incur high inference-time cost.
-  - In this paper, we propose Bi-directional Perceptual Shaping (BiPS), which transforms question-conditioned masked views into bidirectional where-to-look signals that shape perception during training.
+  - The early detection of pancreatic neoplasm is a major clinical dilemma, and it is predominantly so because tumors are likely to occur with minimal contrast margins and a large spread anatomy-wide variation amongst patients on a CT scan.
+  - These complexities require to be addressed with an effective and scalable system that can assist in enhancing the salience of the subtle visual cues and provide a high level of the generalization on the multimodal imaging data.
 
-### Patch-Discontinuity Mining for Generalized Deepfake Detection
-- **arXiv**: http://arxiv.org/abs/2512.22027v1
+### Same or Not? Enhancing Visual Perception in Vision-Language Models
+- **arXiv**: http://arxiv.org/abs/2512.23592v1
 - **Summary**:
-  - The rapid advancement of generative artificial intelligence has enabled the creation of highly realistic fake facial images, posing serious threats to personal privacy and the integrity of online information.
-  - Existing deepfake detection methods often rely on handcrafted forensic cues and complex architectures, achieving strong performance in intra-domain settings but suffering significant degradation when confronted with unseen forgery patterns.
+  - Vision-language models (VLMs) excel at broad visual understanding but remain coarse-grained, exhibit visual biases, and miss subtle visual details.
+  - Existing training corpora reinforce this limitation by emphasizing general recognition ("Is it a cat or a dog?") over fine-grained perception.
 
-### Look Closer! An Adversarial Parametric Editing Framework for Hallucination Mitigation in VLMs
-- **arXiv**: http://arxiv.org/abs/2512.21999v1
+### Instruction-Following Evaluation of Large Vision-Language Models
+- **arXiv**: http://arxiv.org/abs/2512.23572v1
 - **Summary**:
-  - While Vision-Language Models (VLMs) have garnered increasing attention in the AI community due to their promising practical applications, they exhibit persistent hallucination issues, generating outputs misaligned with visual inputs.
-  - Recent studies attribute these hallucinations to VLMs' over-reliance on linguistic priors and insufficient visual feature integration, proposing heuristic decoding calibration strategies to mitigate them.
+  - Following the initial flourishing of large language models (LLMs), there has been a surge in proposed large vision-language models (LVLMs) that integrate LLMs with vision capabilities.
+  - However, it has been observed that LVLMs, after tuning to visual instruction using commonly used training datasets, often fail to exhibit the instruction-following ability that was present in the LLM before integration, leading to results in which they do not follow task instructions as expected.
 
-### LVLM-Aided Alignment of Task-Specific Vision Models
-- **arXiv**: http://arxiv.org/abs/2512.21985v1
+### Soft Robotic Technological Probe for Speculative Fashion Futures
+- **arXiv**: http://arxiv.org/abs/2512.23570v1
 - **Summary**:
-  - In high-stakes domains, small task-specific vision models are crucial due to their low computational requirements and the availability of numerous methods to explain their results.
-  - However, these explanations often reveal that the models do not align well with human domain knowledge, relying instead on spurious correlations.
+  - Emerging wearable robotics demand design approaches that address not only function, but also social meaning.
+  - In response, we present Sumbrella, a soft robotic garment developed as a speculative fashion probe.
 
-### StereoVLA: Enhancing Vision-Language-Action Models with Stereo Vision
-- **arXiv**: http://arxiv.org/abs/2512.21970v1
+### PathFound: An Agentic Multimodal Model Activating Evidence-seeking Pathological Diagnosis
+- **arXiv**: http://arxiv.org/abs/2512.23545v1
 - **Summary**:
-  - Stereo cameras closely mimic human binocular vision, providing rich spatial cues critical for precise robotic manipulation.
-  - Despite their advantage, the adoption of stereo vision in vision-language-action models (VLAs) remains underexplored.
+  - Recent pathological foundation models have substantially advanced visual representation learning and multimodal interaction.
+  - However, most models still rely on a static inference paradigm in which whole-slide images are processed once to produce predictions, without reassessment or targeted evidence acquisition under ambiguous diagnoses.
+
+### Act2Goal: From World Model To General Goal-conditioned Policy
+- **arXiv**: http://arxiv.org/abs/2512.23541v1
+- **Summary**:
+  - Specifying robotic manipulation tasks in a manner that is both expressive and precise remains a central challenge.
+  - While visual goals provide a compact and unambiguous task specification, existing goal-conditioned policies often struggle with long-horizon manipulation due to their reliance on single-step action prediction without explicit modeling of task progress.
+
+### Robust Deep Learning Control with Guaranteed Performance for Safe and Reliable Robotization in Heavy-Duty Machinery
+- **arXiv**: http://arxiv.org/abs/2512.23505v1
+- **Summary**:
+  - Today's heavy-duty mobile machines (HDMMs) face two transitions: from diesel-hydraulic actuation to clean electric systems driven by climate goals, and from human supervision toward greater autonomy.
+  - Diesel-hydraulic systems have long dominated, so full electrification, via direct replacement or redesign, raises major technical and economic challenges.
+
+### Automated river gauge plate reading using a hybrid object detection and generative AI framework in the Limpopo River Basin
+- **arXiv**: http://arxiv.org/abs/2512.23454v1
+- **Summary**:
+  - Accurate and continuous monitoring of river water levels is essential for flood forecasting, water resource management, and ecological protection.
+  - Traditional hydrological observation methods are often limited by manual measurement errors and environmental constraints.
 
 <!-- END:vision_ro -->
