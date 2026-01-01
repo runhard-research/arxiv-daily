@@ -1,130 +1,99 @@
 # arXiv Daily Papers
 
-_Last updated: 2025-12-31_
+_Last updated: 2026-01-01_
 
 ---
 
 ## Computer Vision
 <!-- START:vision -->
-_No papers found._
+### DarkEQA: Benchmarking Vision-Language Models for Embodied Question Answering in Low-Light Indoor Environments
+- **arXiv**: http://arxiv.org/abs/2512.24985v1
+- **Summary**:
+  - Vision Language Models (VLMs) are increasingly adopted as central reasoning modules for embodied agents.
+  - Existing benchmarks evaluate their capabilities under ideal, well-lit conditions, yet robust 24/7 operation demands performance under a wide range of visual degradations, including low-light conditions at night or in dark environments--a core necessity that has been largely overlooked.
+
 <!-- END:vision -->
 
 ## Large Language Models
 <!-- START:llm -->
-### The Big Three in Marriage Talk: LLM-Assisted Analysis of Moral Ethics and Sentiment on Weibo and Xiaohongshu
-- **arXiv**: http://arxiv.org/abs/2512.23609v1
+### Encyclo-K: Evaluating LLMs with Dynamically Composed Knowledge Statements
+- **arXiv**: http://arxiv.org/abs/2512.24867v1
 - **Summary**:
-  - China's marriage registrations have declined dramatically, dropping from 13.47 million couples in 2013 to 6.1 million in 2024.
-  - Understanding public attitudes toward marriage requires examining not only emotional sentiment but also the moral reasoning underlying these evaluations.
+  - Benchmarks play a crucial role in tracking the rapid advancement of large language models (LLMs) and identifying their capability boundaries.
+  - However, existing benchmarks predominantly curate questions at the question level, suffering from three fundamental limitations: vulnerability to data contamination, restriction to single-knowledge-point assessment, and reliance on costly domain expert annotation.
 
-### C2PO: Diagnosing and Disentangling Bias Shortcuts in LLMs
-- **arXiv**: http://arxiv.org/abs/2512.23430v1
+### Compute-Accuracy Pareto Frontiers for Open-Source Reasoning Large Language Models
+- **arXiv**: http://arxiv.org/abs/2512.24776v1
 - **Summary**:
-  - Bias in Large Language Models (LLMs) poses significant risks to trustworthiness, manifesting primarily as stereotypical biases (e.g., gender or racial stereotypes) and structural biases (e.g., lexical overlap or position preferences).
-  - However, prior paradigms typically address these in isolation, often mitigating one at the expense of exacerbating the other.
+  - Large Language Models (LLMs) are demonstrating rapid improvements on complex reasoning benchmarks, particularly when allowed to utilize intermediate reasoning steps before converging on a final solution.
+  - However, current literature often overlooks the significant computational burden associated with generating long reasoning sequences.
 
-### A Stepwise-Enhanced Reasoning Framework for Large Language Models Based on External Subgraph Generation
-- **arXiv**: http://arxiv.org/abs/2512.23356v1
+### Do Large Language Models Know What They Are Capable Of?
+- **arXiv**: http://arxiv.org/abs/2512.24661v1
 - **Summary**:
-  - Large Language Models (LLMs) have achieved strong performance across a wide range of natural language processing tasks in recent years, including machine translation, text generation, and question answering.
-  - As their applications extend to increasingly complex scenarios, however, LLMs continue to face challenges in tasks that require deep reasoning and logical inference.
+  - We investigate whether large language models (LLMs) can predict whether they will succeed on a given task and whether their predictions improve as they progress through multi-step tasks.
+  - We also investigate whether LLMs can learn from in-context experiences to make better decisions about whether to pursue a task in scenarios where failure is costly.
 
-### CubeBench: Diagnosing Interactive, Long-Horizon Spatial Reasoning Under Partial Observations
-- **arXiv**: http://arxiv.org/abs/2512.23328v1
+### Youtu-LLM: Unlocking the Native Agentic Potential for Lightweight Large Language Models
+- **arXiv**: http://arxiv.org/abs/2512.24618v1
 - **Summary**:
-  - Large Language Model (LLM) agents, while proficient in the digital realm, face a significant gap in physical-world deployment due to the challenge of forming and maintaining a robust spatial mental model.
-  - We identify three core cognitive challenges hindering this transition: spatial reasoning, long-horizon state tracking via mental simulation, and active exploration under partial observation.
+  - We introduce Youtu-LLM, a lightweight yet powerful language model that harmonizes high computational efficiency with native agentic intelligence.
+  - Unlike typical small models that rely on distillation, Youtu-LLM (1.96B) is pre-trained from scratch to systematically cultivate reasoning and planning capabilities.
+
+### Understanding and Steering the Cognitive Behaviors of Reasoning Models at Test-Time
+- **arXiv**: http://arxiv.org/abs/2512.24574v1
+- **Summary**:
+  - Large Language Models (LLMs) often rely on long chain-of-thought (CoT) reasoning to solve complex tasks.
+  - While effective, these trajectories are frequently inefficient, leading to high latency from excessive token generation, or unstable reasoning that alternates between underthinking (shallow, inconsistent steps) and overthinking (repetitive, verbose reasoning).
 
 <!-- END:llm -->
 
 ## Multimodal (MLLM)
 <!-- START:mllm -->
-### Same or Not? Enhancing Visual Perception in Vision-Language Models
-- **arXiv**: http://arxiv.org/abs/2512.23592v1
+### DarkEQA: Benchmarking Vision-Language Models for Embodied Question Answering in Low-Light Indoor Environments
+- **arXiv**: http://arxiv.org/abs/2512.24985v1
 - **Summary**:
-  - Vision-language models (VLMs) excel at broad visual understanding but remain coarse-grained, exhibit visual biases, and miss subtle visual details.
-  - Existing training corpora reinforce this limitation by emphasizing general recognition ("Is it a cat or a dog?") over fine-grained perception.
+  - Vision Language Models (VLMs) are increasingly adopted as central reasoning modules for embodied agents.
+  - Existing benchmarks evaluate their capabilities under ideal, well-lit conditions, yet robust 24/7 operation demands performance under a wide range of visual degradations, including low-light conditions at night or in dark environments--a core necessity that has been largely overlooked.
 
-### ProGuard: Towards Proactive Multimodal Safeguard
-- **arXiv**: http://arxiv.org/abs/2512.23573v1
+### CPJ: Explainable Agricultural Pest Diagnosis via Caption-Prompt-Judge with LLM-Judged Refinement
+- **arXiv**: http://arxiv.org/abs/2512.24947v1
 - **Summary**:
-  - The rapid evolution of generative models has led to a continuous emergence of multimodal safety risks, exposing the limitations of existing defense methods.
-  - To address these challenges, we propose ProGuard, a vision-language proactive guard that identifies and describes out-of-distribution (OOD) safety risks without the need for model adjustments required by traditional reactive approaches.
+  - Accurate and interpretable crop disease diagnosis is essential for agricultural decision-making, yet existing methods often rely on costly supervised fine-tuning and perform poorly under domain shifts.
+  - We propose Caption--Prompt--Judge (CPJ), a training-free few-shot framework that enhances Agri-Pest VQA through structured, interpretable image captions.
 
-### Instruction-Following Evaluation of Large Vision-Language Models
-- **arXiv**: http://arxiv.org/abs/2512.23572v1
+### VLN-MME: Diagnosing MLLMs as Language-guided Visual Navigation agents
+- **arXiv**: http://arxiv.org/abs/2512.24851v1
 - **Summary**:
-  - Following the initial flourishing of large language models (LLMs), there has been a surge in proposed large vision-language models (LVLMs) that integrate LLMs with vision capabilities.
-  - However, it has been observed that LVLMs, after tuning to visual instruction using commonly used training datasets, often fail to exhibit the instruction-following ability that was present in the LLM before integration, leading to results in which they do not follow task instructions as expected.
+  - Multimodal Large Language Models (MLLMs) have demonstrated remarkable capabilities across a wide range of vision-language tasks.
+  - However, their performance as embodied agents, which requires multi-round dialogue spatial reasoning and sequential action prediction, needs further exploration.
 
-### PathFound: An Agentic Multimodal Model Activating Evidence-seeking Pathological Diagnosis
-- **arXiv**: http://arxiv.org/abs/2512.23545v1
+### Video and Language Alignment in 2D Systems for 3D Multi-object Scenes with Multi-Information Derivative-Free Control
+- **arXiv**: http://arxiv.org/abs/2512.24826v1
 - **Summary**:
-  - Recent pathological foundation models have substantially advanced visual representation learning and multimodal interaction.
-  - However, most models still rely on a static inference paradigm in which whole-slide images are processed once to produce predictions, without reassessment or targeted evidence acquisition under ambiguous diagnoses.
-
-### Automated river gauge plate reading using a hybrid object detection and generative AI framework in the Limpopo River Basin
-- **arXiv**: http://arxiv.org/abs/2512.23454v1
-- **Summary**:
-  - Accurate and continuous monitoring of river water levels is essential for flood forecasting, water resource management, and ecological protection.
-  - Traditional hydrological observation methods are often limited by manual measurement errors and environmental constraints.
-
-### CoFi-Dec: Hallucination-Resistant Decoding via Coarse-to-Fine Generative Feedback in Large Vision-Language Models
-- **arXiv**: http://arxiv.org/abs/2512.23453v1
-- **Summary**:
-  - Large Vision-Language Models (LVLMs) have achieved impressive progress in multi-modal understanding and generation.
-  - However, they still tend to produce hallucinated content that is inconsistent with the visual input, which limits their reliability in real-world applications.
+  - Cross-modal systems trained on 2D visual inputs are presented with a dimensional shift when processing 3D scenes.
+  - An in-scene camera bridges the dimensionality gap but requires learning a control module.
 
 <!-- END:mllm -->
 
 ## Vision + Robotics
 <!-- START:vision_ro -->
-### Scalable Residual Feature Aggregation Framework with Hybrid Metaheuristic Optimization for Robust Early Pancreatic Neoplasm Detection in Multimodal CT Imaging
-- **arXiv**: http://arxiv.org/abs/2512.23597v1
+### DarkEQA: Benchmarking Vision-Language Models for Embodied Question Answering in Low-Light Indoor Environments
+- **arXiv**: http://arxiv.org/abs/2512.24985v1
 - **Summary**:
-  - The early detection of pancreatic neoplasm is a major clinical dilemma, and it is predominantly so because tumors are likely to occur with minimal contrast margins and a large spread anatomy-wide variation amongst patients on a CT scan.
-  - These complexities require to be addressed with an effective and scalable system that can assist in enhancing the salience of the subtle visual cues and provide a high level of the generalization on the multimodal imaging data.
+  - Vision Language Models (VLMs) are increasingly adopted as central reasoning modules for embodied agents.
+  - Existing benchmarks evaluate their capabilities under ideal, well-lit conditions, yet robust 24/7 operation demands performance under a wide range of visual degradations, including low-light conditions at night or in dark environments--a core necessity that has been largely overlooked.
 
-### Same or Not? Enhancing Visual Perception in Vision-Language Models
-- **arXiv**: http://arxiv.org/abs/2512.23592v1
+### VLN-MME: Diagnosing MLLMs as Language-guided Visual Navigation agents
+- **arXiv**: http://arxiv.org/abs/2512.24851v1
 - **Summary**:
-  - Vision-language models (VLMs) excel at broad visual understanding but remain coarse-grained, exhibit visual biases, and miss subtle visual details.
-  - Existing training corpora reinforce this limitation by emphasizing general recognition ("Is it a cat or a dog?") over fine-grained perception.
+  - Multimodal Large Language Models (MLLMs) have demonstrated remarkable capabilities across a wide range of vision-language tasks.
+  - However, their performance as embodied agents, which requires multi-round dialogue spatial reasoning and sequential action prediction, needs further exploration.
 
-### Instruction-Following Evaluation of Large Vision-Language Models
-- **arXiv**: http://arxiv.org/abs/2512.23572v1
+### Video and Language Alignment in 2D Systems for 3D Multi-object Scenes with Multi-Information Derivative-Free Control
+- **arXiv**: http://arxiv.org/abs/2512.24826v1
 - **Summary**:
-  - Following the initial flourishing of large language models (LLMs), there has been a surge in proposed large vision-language models (LVLMs) that integrate LLMs with vision capabilities.
-  - However, it has been observed that LVLMs, after tuning to visual instruction using commonly used training datasets, often fail to exhibit the instruction-following ability that was present in the LLM before integration, leading to results in which they do not follow task instructions as expected.
-
-### Soft Robotic Technological Probe for Speculative Fashion Futures
-- **arXiv**: http://arxiv.org/abs/2512.23570v1
-- **Summary**:
-  - Emerging wearable robotics demand design approaches that address not only function, but also social meaning.
-  - In response, we present Sumbrella, a soft robotic garment developed as a speculative fashion probe.
-
-### PathFound: An Agentic Multimodal Model Activating Evidence-seeking Pathological Diagnosis
-- **arXiv**: http://arxiv.org/abs/2512.23545v1
-- **Summary**:
-  - Recent pathological foundation models have substantially advanced visual representation learning and multimodal interaction.
-  - However, most models still rely on a static inference paradigm in which whole-slide images are processed once to produce predictions, without reassessment or targeted evidence acquisition under ambiguous diagnoses.
-
-### Act2Goal: From World Model To General Goal-conditioned Policy
-- **arXiv**: http://arxiv.org/abs/2512.23541v1
-- **Summary**:
-  - Specifying robotic manipulation tasks in a manner that is both expressive and precise remains a central challenge.
-  - While visual goals provide a compact and unambiguous task specification, existing goal-conditioned policies often struggle with long-horizon manipulation due to their reliance on single-step action prediction without explicit modeling of task progress.
-
-### Robust Deep Learning Control with Guaranteed Performance for Safe and Reliable Robotization in Heavy-Duty Machinery
-- **arXiv**: http://arxiv.org/abs/2512.23505v1
-- **Summary**:
-  - Today's heavy-duty mobile machines (HDMMs) face two transitions: from diesel-hydraulic actuation to clean electric systems driven by climate goals, and from human supervision toward greater autonomy.
-  - Diesel-hydraulic systems have long dominated, so full electrification, via direct replacement or redesign, raises major technical and economic challenges.
-
-### Automated river gauge plate reading using a hybrid object detection and generative AI framework in the Limpopo River Basin
-- **arXiv**: http://arxiv.org/abs/2512.23454v1
-- **Summary**:
-  - Accurate and continuous monitoring of river water levels is essential for flood forecasting, water resource management, and ecological protection.
-  - Traditional hydrological observation methods are often limited by manual measurement errors and environmental constraints.
+  - Cross-modal systems trained on 2D visual inputs are presented with a dimensional shift when processing 3D scenes.
+  - An in-scene camera bridges the dimensionality gap but requires learning a control module.
 
 <!-- END:vision_ro -->
