@@ -1,6 +1,6 @@
 # arXiv Daily Papers
 
-_Last updated: 2026-01-02_
+_Last updated: 2026-01-03_
 
 ---
 
