@@ -1,0 +1,45 @@
+name: arXiv Daily Update
+
+on:
+  schedule:
+    - cron: "0 1 * * *"   # 毎日 10:00 JST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-arxiv:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false  # GITHUB_TOKEN を自分で使用する
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install requests pyyaml
+
+      - name: Run arXiv fetcher
+        run: |
+          for cfg in configs/*.yaml; do
+            python scripts/fetch_arxiv.py $cfg
+          done
+
+      - name: Commit & push if changed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add README.md
+          git diff --cached --quiet || git commit -m "Daily arXiv update"
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/runhard-research/arxiv-daily.git HEAD:main
+

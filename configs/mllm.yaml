@@ -1,0 +1,25 @@
+name: "Multimodal Large Language Models"
+tag: "mllm"
+
+query:
+  category: "cs.CV"
+  max_results: 30
+
+filter:
+  keywords:
+    - "multimodal"
+    - "vision-language"
+    - "MLLM"
+    - "vision language model"
+
+  must:
+    - "vision"
+    - "language"
+
+  exclude:
+    - "medical"
+    - "audio"
+    - "speech"
+
+  min_year: 2024
+

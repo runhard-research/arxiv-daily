@@ -1,0 +1,57 @@
+name: "Computer Vision"
+tag: "vision"
+
+query:
+  category: "cs.CV"
+  max_results: 20
+
+filter:
+  keywords:
+    - "computer vision"
+    - "vision"
+    - "image understanding"
+    - "visual recognition"
+    - "object detection"
+    - "instance segmentation"
+    - "semantic segmentation"
+    - "panoptic segmentation"
+    - "object tracking"
+    - "multi-object tracking"
+    - "optical flow"
+    - "motion estimation"
+    - "3D vision"
+    - "3D reconstruction"
+    - "depth estimation"
+    - "multi-view geometry"
+    - "SLAM"
+    - "NeRF"
+    - "Gaussian Splatting"
+    - "representation learning"
+    - "self-supervised learning"
+    - "contrastive learning"
+    - "foundation model"
+    - "vision transformer"
+    - "ViT"
+    - "image generation"
+    - "diffusion model"
+    - "text-to-image"
+    - "multimodal"
+    - "video understanding"
+    - "action recognition"
+    - "video segmentation"
+    - "image"
+    - "3D"
+    - "reconstruction"
+
+
+  exclude:
+    - "medical"
+    - "radiology"
+    - "ultrasound"
+    - "MRI"
+    - "CT"
+    - "pathology"
+    - "microscopy"
+
+  min_year: 2024
+

@@ -1,0 +1,23 @@
+name: "Large Language Models"
+tag: "llm"
+
+query:
+  category: "cs.CL"
+  max_results: 30
+
+filter:
+  keywords:
+    - "large language model"
+    - "LLM"
+
+  must:
+    - "reasoning"
+
+  exclude:
+    - "vision"
+    - "multimodal"
+    - "speech"
+    - "dialogue"
+
+  min_year: 2024
+
