@@ -1,6 +1,6 @@
 # arXiv Daily Papers
 
-_Last updated: 2026-01-05_
+_Last updated: 2026-01-06_
 
 ---
 
@@ -11,84 +11,96 @@ _No papers found._
 
 ## Large Language Models
 <!-- START:llm -->
-### Geometry of Reason: Spectral Signatures of Valid Mathematical Reasoning
-- **arXiv**: http://arxiv.org/abs/2601.00791v1
+### Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents
+- **arXiv**: http://arxiv.org/abs/2601.01885v1
 - **Summary**:
-  - We present a training-free method for detecting valid mathematical reasoning in large language models through spectral analysis of attention patterns.
-  - By treating attention matrices as adjacency matrices of dynamic graphs over tokens, we extract four interpretable spectral diagnostics, the Fiedler value (algebraic connectivity), high-frequency energy ratio (HFER), graph signal smoothness, and spectral entropy, that exhibit statistically significant differences between valid and invalid mathematical proofs.
-
-### InfoSynth: Information-Guided Benchmark Synthesis for LLMs
-- **arXiv**: http://arxiv.org/abs/2601.00575v1
-- **Summary**:
-  - Large language models (LLMs) have demonstrated significant advancements in reasoning and code generation.
-  - However, efficiently creating new benchmarks to evaluate these capabilities remains a challenge.
-
-### Rule-Based Approaches to Atomic Sentence Extraction
-- **arXiv**: http://arxiv.org/abs/2601.00506v1
-- **Summary**:
-  - Natural language often combines multiple ideas into complex sentences.
-  - Atomic sentence extraction, the task of decomposing complex sentences into simpler sentences that each express a single idea, improves performance in information retrieval, question answering, and automated reasoning systems.
-
-### Language as Mathematical Structure: Examining Semantic Field Theory Against Language Games
-- **arXiv**: http://arxiv.org/abs/2601.00448v1
-- **Summary**:
-  - Large language models (LLMs) offer a new empirical setting in which long-standing theories of linguistic meaning can be examined.
-  - This paper contrasts two broad approaches: social constructivist accounts associated with language games, and a mathematically oriented framework we call Semantic Field Theory.
-
-### The Role of Mixed-Language Documents for Multilingual Large Language Model Pretraining
-- **arXiv**: http://arxiv.org/abs/2601.00364v1
-- **Summary**:
-  - Multilingual large language models achieve impressive cross-lingual performance despite largely monolingual pretraining.
-  - While bilingual data in pretraining corpora is widely believed to enable these abilities, details of its contributions remain unclear.
+  - Large language model (LLM) agents face fundamental limitations in long-horizon reasoning due to finite context windows, making effective memory management critical.
+  - Existing methods typically handle long-term memory (LTM) and short-term memory (STM) as separate components, relying on heuristics or auxiliary controllers, which limits adaptability and end-to-end optimization.
 
 <!-- END:llm -->
 
 ## Multimodal (MLLM)
 <!-- START:mllm -->
-### CRoPS: A Training-Free Hallucination Mitigation Framework for Vision-Language Models
-- **arXiv**: http://arxiv.org/abs/2601.00659v1
+### VINO: A Unified Visual Generator with Interleaved OmniModal Context
+- **arXiv**: http://arxiv.org/abs/2601.02358v1
 - **Summary**:
-  - Despite the rapid success of Large Vision-Language Models (LVLMs), a persistent challenge is their tendency to generate hallucinated content, undermining reliability in real-world use.
-  - Existing training-free methods address hallucinations but face two limitations: (i) they rely on narrow assumptions about hallucination sources, and (ii) their effectiveness declines toward the end of generation, where hallucinations are most likely to occur.
+  - We present VINO, a unified visual generator that performs image and video generation and editing within a single framework.
+  - Instead of relying on task-specific models or independent modules for each modality, VINO uses a shared diffusion backbone that conditions on text, images and videos, enabling a broad range of visual creation and editing tasks under one model.
+
+### Talk2Move: Reinforcement Learning for Text-Instructed Object-Level Geometric Transformation in Scenes
+- **arXiv**: http://arxiv.org/abs/2601.02356v1
+- **Summary**:
+  - We introduce Talk2Move, a reinforcement learning (RL) based diffusion framework for text-instructed spatial transformation of objects within scenes.
+  - Spatially manipulating objects in a scene through natural language poses a challenge for multimodal generation systems.
+
+### SLGNet: Synergizing Structural Priors and Language-Guided Modulation for Multimodal Object Detection
+- **arXiv**: http://arxiv.org/abs/2601.02249v1
+- **Summary**:
+  - Multimodal object detection leveraging RGB and Infrared (IR) images is pivotal for robust perception in all-weather scenarios.
+  - While recent adapter-based approaches efficiently transfer RGB-pretrained foundation models to this task, they often prioritize model efficiency at the expense of cross-modal structural consistency.
+
+### BiPrompt: Bilateral Prompt Optimization for Visual and Textual Debiasing in Vision-Language Models
+- **arXiv**: http://arxiv.org/abs/2601.02147v1
+- **Summary**:
+  - Vision language foundation models such as CLIP exhibit impressive zero-shot generalization yet remain vulnerable to spurious correlations across visual and textual modalities.
+  - Existing debiasing approaches often address a single modality either visual or textual leading to partial robustness and unstable adaptation under distribution shifts.
 
 <!-- END:mllm -->
 
 ## Vision + Robotics
 <!-- START:vision_ro -->
-### RoboReward: General-Purpose Vision-Language Reward Models for Robotics
-- **arXiv**: http://arxiv.org/abs/2601.00675v1
+### ExposeAnyone: Personalized Audio-to-Expression Diffusion Models Are Robust Zero-Shot Face Forgery Detectors
+- **arXiv**: http://arxiv.org/abs/2601.02359v1
 - **Summary**:
-  - A well-designed reward is critical for effective reinforcement learning-based policy improvement.
-  - In real-world robotic domains, obtaining such rewards typically requires either labor-intensive human labeling or brittle, handcrafted objectives.
+  - Detecting unknown deepfake manipulations remains one of the most challenging problems in face forgery detection.
+  - Current state-of-the-art approaches fail to generalize to unseen manipulations, as they primarily rely on supervised training with existing deepfakes or pseudo-fakes, which leads to overfitting to specific forgery patterns.
 
-### CRoPS: A Training-Free Hallucination Mitigation Framework for Vision-Language Models
-- **arXiv**: http://arxiv.org/abs/2601.00659v1
+### VINO: A Unified Visual Generator with Interleaved OmniModal Context
+- **arXiv**: http://arxiv.org/abs/2601.02358v1
 - **Summary**:
-  - Despite the rapid success of Large Vision-Language Models (LVLMs), a persistent challenge is their tendency to generate hallucinated content, undermining reliability in real-world use.
-  - Existing training-free methods address hallucinations but face two limitations: (i) they rely on narrow assumptions about hallucination sources, and (ii) their effectiveness declines toward the end of generation, where hallucinations are most likely to occur.
+  - We present VINO, a unified visual generator that performs image and video generation and editing within a single framework.
+  - Instead of relying on task-specific models or independent modules for each modality, VINO uses a shared diffusion backbone that conditions on text, images and videos, enabling a broad range of visual creation and editing tasks under one model.
 
-### Quality Detection of Stored Potatoes via Transfer Learning: A CNN and Vision Transformer Approach
-- **arXiv**: http://arxiv.org/abs/2601.00645v1
+### Talk2Move: Reinforcement Learning for Text-Instructed Object-Level Geometric Transformation in Scenes
+- **arXiv**: http://arxiv.org/abs/2601.02356v1
 - **Summary**:
-  - Image-based deep learning provides a non-invasive, scalable solution for monitoring potato quality during storage, addressing key challenges such as sprout detection, weight loss estimation, and shelf-life prediction.
-  - In this study, images and corresponding weight data were collected over a 200-day period under controlled temperature and humidity conditions.
+  - We introduce Talk2Move, a reinforcement learning (RL) based diffusion framework for text-instructed spatial transformation of objects within scenes.
+  - Spatially manipulating objects in a scene through natural language poses a challenge for multimodal generation systems.
 
-### Noise-Robust Tiny Object Localization with Flows
-- **arXiv**: http://arxiv.org/abs/2601.00617v1
+### CycleVLA: Proactive Self-Correcting Vision-Language-Action Models via Subtask Backtracking and Minimum Bayes Risk Decoding
+- **arXiv**: http://arxiv.org/abs/2601.02295v1
 - **Summary**:
-  - Despite significant advances in generic object detection, a persistent performance gap remains for tiny objects compared to normal-scale objects.
-  - We demonstrate that tiny objects are highly sensitive to annotation noise, where optimizing strict localization objectives risks noise overfitting.
+  - Current work on robot failure detection and correction typically operate in a post hoc manner, analyzing errors and applying corrections only after failures occur.
+  - This work introduces CycleVLA, a system that equips Vision-Language-Action models (VLAs) with proactive self-correction, the capability to anticipate incipient failures and recover before they fully manifest during execution.
 
-### Vision-based Goal-Reaching Control for Mobile Robots Using a Hierarchical Learning Framework
-- **arXiv**: http://arxiv.org/abs/2601.00610v1
+### InfiniteVGGT: Visual Geometry Grounded Transformer for Endless Streams
+- **arXiv**: http://arxiv.org/abs/2601.02281v1
 - **Summary**:
-  - Reinforcement learning (RL) is effective in many robotic applications, but it requires extensive exploration of the state-action space, during which behaviors can be unsafe.
-  - This significantly limits its applicability to large robots with complex actuators operating on unstable terrain.
+  - The grand vision of enabling persistent, large-scale 3D visual geometry understanding is shackled by the irreconcilable demands of scalability and long-term stability.
+  - While offline models like VGGT achieve inspiring geometry capability, their batch-based nature renders them irrelevant for live systems.
 
-### DynaDrag: Dynamic Drag-Style Image Editing by Motion Prediction
-- **arXiv**: http://arxiv.org/abs/2601.00542v1
+### DiffProxy: Multi-View Human Mesh Recovery via Diffusion-Generated Dense Proxies
+- **arXiv**: http://arxiv.org/abs/2601.02267v1
 - **Summary**:
-  - To achieve pixel-level image manipulation, drag-style image editing which edits images using points or trajectories as conditions is attracting widespread attention.
-  - Most previous methods follow move-and-track framework, in which miss tracking and ambiguous tracking are unavoidable challenging issues.
+  - Human mesh recovery from multi-view images faces a fundamental challenge: real-world datasets contain imperfect ground-truth annotations that bias the models' training, while synthetic data with precise supervision suffers from domain gap.
+  - In this paper, we propose DiffProxy, a novel framework that generates multi-view consistent human proxies for mesh recovery.
+
+### SLGNet: Synergizing Structural Priors and Language-Guided Modulation for Multimodal Object Detection
+- **arXiv**: http://arxiv.org/abs/2601.02249v1
+- **Summary**:
+  - Multimodal object detection leveraging RGB and Infrared (IR) images is pivotal for robust perception in all-weather scenarios.
+  - While recent adapter-based approaches efficiently transfer RGB-pretrained foundation models to this task, they often prioritize model efficiency at the expense of cross-modal structural consistency.
+
+### NextFlow: Unified Sequential Modeling Activates Multimodal Understanding and Generation
+- **arXiv**: http://arxiv.org/abs/2601.02204v1
+- **Summary**:
+  - We present NextFlow, a unified decoder-only autoregressive transformer trained on 6 trillion interleaved text-image discrete tokens.
+  - By leveraging a unified vision representation within a unified autoregressive architecture, NextFlow natively activates multimodal understanding and generation capabilities, unlocking abilities of image editing, interleaved content and video generation.
+
+### BiPrompt: Bilateral Prompt Optimization for Visual and Textual Debiasing in Vision-Language Models
+- **arXiv**: http://arxiv.org/abs/2601.02147v1
+- **Summary**:
+  - Vision language foundation models such as CLIP exhibit impressive zero-shot generalization yet remain vulnerable to spurious correlations across visual and textual modalities.
+  - Existing debiasing approaches often address a single modality either visual or textual leading to partial robustness and unstable adaptation under distribution shifts.
 
 <!-- END:vision_ro -->
