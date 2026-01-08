@@ -1,6 +1,6 @@
 # arXiv Daily Papers
 
-_Last updated: 2026-01-07_
+_Last updated: 2026-01-08_
 
 ---
 
@@ -11,96 +11,132 @@ _No papers found._
 
 ## Large Language Models
 <!-- START:llm -->
-### STReasoner: Empowering LLMs for Spatio-Temporal Reasoning in Time Series via Spatial-Aware Reinforcement Learning
-- **arXiv**: http://arxiv.org/abs/2601.03248v1
+### All That Glisters Is Not Gold: A Benchmark for Reference-Free Counterfactual Financial Misinformation Detection
+- **arXiv**: http://arxiv.org/abs/2601.04160v1
 - **Summary**:
-  - Spatio-temporal reasoning in time series involves the explicit synthesis of temporal dynamics, spatial dependencies, and textual context.
-  - This capability is vital for high-stakes decision-making in systems such as traffic networks, power grids, and disease propagation.
+  - We introduce RFC Bench, a benchmark for evaluating large language models on financial misinformation under realistic news.
+  - RFC Bench operates at the paragraph level and captures the contextual complexity of financial news where meaning emerges from dispersed cues.
 
-### UltraLogic: Enhancing LLM Reasoning through Large-Scale Data Synthesis and Bipolar Float Reward
-- **arXiv**: http://arxiv.org/abs/2601.03205v1
+### KDCM: Reducing Hallucination in LLMs through Explicit Reasoning Structures
+- **arXiv**: http://arxiv.org/abs/2601.04086v1
 - **Summary**:
-  - While Large Language Models (LLMs) have demonstrated significant potential in natural language processing , complex general-purpose reasoning requiring multi-step logic, planning, and verification remains a critical bottleneck.
-  - Although Reinforcement Learning with Verifiable Rewards (RLVR) has succeeded in specific domains , the field lacks large-scale, high-quality, and difficulty-calibrated data for general reasoning.
+  - To mitigate hallucinations in large language models (LLMs), we propose a framework that focuses on errors induced by prompts.
+  - Our method extends a chain-style knowledge distillation approach by incorporating a programmable module that guides knowledge graph exploration.
 
-### MemRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory
-- **arXiv**: http://arxiv.org/abs/2601.03192v1
+### Modular Prompt Optimization: Optimizing Structured Prompts with Section-Local Textual Gradients
+- **arXiv**: http://arxiv.org/abs/2601.04055v1
 - **Summary**:
-  - The hallmark of human intelligence is the ability to master new skills through Constructive Episodic Simulation-retrieving past experiences to synthesize solutions for novel tasks.
-  - While Large Language Models possess strong reasoning capabilities, they struggle to emulate this self-evolution: fine-tuning is computationally expensive and prone to catastrophic forgetting, while existing memory-based methods rely on passive semantic matching that often retrieves noise.
+  - Prompt quality plays a central role in controlling the behavior, reliability, and reasoning performance of large language models (LLMs), particularly for smaller open-source instruction-tuned models that depend heavily on explicit structure.
+  - While recent work has explored automatic prompt optimization using textual gradients and self-refinement, most existing methods treat prompts as monolithic blocks of text, making it difficult to localize errors, preserve critical instructions, or prevent uncontrolled prompt growth.
 
-### WebAnchor: Anchoring Agent Planning to Stabilize Long-Horizon Web Reasoning
-- **arXiv**: http://arxiv.org/abs/2601.03164v1
+### Benchmark^2: Systematic Evaluation of LLM Benchmarks
+- **arXiv**: http://arxiv.org/abs/2601.03986v1
 - **Summary**:
-  - Large Language Model(LLM)-based agents have shown strong capabilities in web information seeking, with reinforcement learning (RL) becoming a key optimization paradigm.
-  - However, planning remains a bottleneck, as existing methods struggle with long-horizon strategies.
+  - The rapid proliferation of benchmarks for evaluating large language models (LLMs) has created an urgent need for systematic methods to assess benchmark quality itself.
+  - We propose Benchmark^2, a comprehensive framework comprising three complementary metrics: (1) Cross-Benchmark Ranking Consistency, measuring whether a benchmark produces model rankings aligned with peer benchmarks; (2) Discriminability Score, quantifying a benchmark's ability to differentiate between models; and (3) Capability Alignment Deviation, identifying problematic instances where stronger models fail but weaker models succeed within the same model family.
 
-### Decoupling the Effect of Chain-of-Thought Reasoning: A Human Label Variation Perspective
-- **arXiv**: http://arxiv.org/abs/2601.03154v1
+### Large-Scale Aspect-Based Sentiment Analysis with Reasoning-Infused LLMs
+- **arXiv**: http://arxiv.org/abs/2601.03940v1
 - **Summary**:
-  - Reasoning-tuned LLMs utilizing long Chain-of-Thought (CoT) excel at single-answer tasks, yet their ability to model Human Label Variation--which requires capturing probabilistic ambiguity rather than resolving it--remains underexplored.
-  - We investigate this through systematic disentanglement experiments on distribution-based tasks, employing Cross-CoT experiments to isolate the effect of reasoning text from intrinsic model priors.
+  - We introduce Arctic-ABSA, a collection of powerful models for real-life aspect-based sentiment analysis (ABSA).
+  - Our models are tailored to commercial needs, trained on a large corpus of public data alongside carefully generated synthetic data, resulting in a dataset 20 times larger than SemEval14.
 
-### One Sample to Rule Them All: Extreme Data Efficiency in RL Scaling
-- **arXiv**: http://arxiv.org/abs/2601.03111v1
+### Adaptive-Boundary-Clipping GRPO: Ensuring Bounded Ratios for Stable and Generalizable Training
+- **arXiv**: http://arxiv.org/abs/2601.03895v1
 - **Summary**:
-  - The reasoning ability of large language models (LLMs) can be unleashed with reinforcement learning (RL) (OpenAI, 2024; DeepSeek-AI et al., 2025a; Zeng et al., 2025).
-  - The success of existing RL attempts in LLMs usually relies on high-quality samples of thousands or beyond.
-
-### ATLAS: Adaptive Test-Time Latent Steering with External Verifiers for Enhancing LLMs Reasoning
-- **arXiv**: http://arxiv.org/abs/2601.03093v1
-- **Summary**:
-  - Recent work on activation and latent steering has demonstrated that modifying internal representations can effectively guide large language models (LLMs) toward improved reasoning and efficiency without additional training.
-  - However, most existing approaches rely on fixed steering policies and static intervention strengths, which limit their robustness across problem instances and often result in over- or under-steering.
+  - Group Relative Policy Optimization (GRPO) has emerged as a popular algorithm for reinforcement learning with large language models (LLMs).
+  - However, upon analyzing its clipping mechanism, we argue that it is suboptimal in certain scenarios.
 
 <!-- END:llm -->
 
 ## Multimodal (MLLM)
 <!-- START:mllm -->
-### Text-Guided Layer Fusion Mitigates Hallucination in Multimodal LLMs
-- **arXiv**: http://arxiv.org/abs/2601.03100v1
+### Scanner-Induced Domain Shifts Undermine the Robustness of Pathology Foundation Models
+- **arXiv**: http://arxiv.org/abs/2601.04163v1
 - **Summary**:
-  - Multimodal large language models (MLLMs) typically rely on a single late-layer feature from a frozen vision encoder, leaving the encoder's rich hierarchy of visual cues under-utilized.
-  - MLLMs still suffer from visually ungrounded hallucinations, often relying on language priors rather than image evidence.
+  - Pathology foundation models (PFMs) have become central to computational pathology, aiming to offer general encoders for feature extraction from whole-slide images (WSIs).
+  - Despite strong benchmark performance, PFM robustness to real-world technical domain shifts, such as variability from whole-slide scanner devices, remains poorly understood.
 
-### ReCCur: A Recursive Corner-Case Curation Framework for Robust Vision-Language Understanding in Open and Edge Scenarios
-- **arXiv**: http://arxiv.org/abs/2601.03011v1
+### Diffusion-DRF: Differentiable Reward Flow for Video Diffusion Fine-Tuning
+- **arXiv**: http://arxiv.org/abs/2601.04153v1
 - **Summary**:
-  - Corner cases are rare or extreme scenarios that drive real-world failures, but they are difficult to curate at scale: web data are noisy, labels are brittle, and edge deployments preclude large retraining.
-  - We present ReCCur (Recursive Corner-Case Curation), a low-compute framework that converts noisy web imagery into auditable fine-grained labels via a multi-agent recursive pipeline.
+  - Direct Preference Optimization (DPO) has recently improved Text-to-Video (T2V) generation by enhancing visual fidelity and text alignment.
+  - However, current methods rely on non-differentiable preference signals from human annotations or learned reward models.
+
+### GeoReason: Aligning Thinking And Answering In Remote Sensing Vision-Language Models Via Logical Consistency Reinforcement Learning
+- **arXiv**: http://arxiv.org/abs/2601.04118v1
+- **Summary**:
+  - The evolution of Remote Sensing Vision-Language Models(RS-VLMs) emphasizes the importance of transitioning from perception-centric recognition toward high-level deductive reasoning to enhance cognitive reliability in complex spatial tasks.
+  - However, current models often suffer from logical hallucinations, where correct answers are derived from flawed reasoning chains or rely on positional shortcuts rather than spatial logic.
+
+### CLAP: Contrastive Latent Action Pretraining for Learning Vision-Language-Action Models from Human Videos
+- **arXiv**: http://arxiv.org/abs/2601.04061v1
+- **Summary**:
+  - Generalist Vision-Language-Action models are currently hindered by the scarcity of robotic data compared to the abundance of human video demonstrations.
+  - Existing Latent Action Models attempt to leverage video data but often suffer from visual entanglement, capturing noise rather than manipulation skills.
+
+### FocusUI: Efficient UI Grounding via Position-Preserving Visual Token Selection
+- **arXiv**: http://arxiv.org/abs/2601.03928v1
+- **Summary**:
+  - Vision-Language Models (VLMs) have shown remarkable performance in User Interface (UI) grounding tasks, driven by their ability to process increasingly high-resolution screenshots.
+  - However, screenshots are tokenized into thousands of visual tokens (e.g., about 4700 for 2K resolution), incurring significant computational overhead and diluting attention.
 
 <!-- END:mllm -->
 
 ## Vision + Robotics
 <!-- START:vision_ro -->
-### Text-Guided Layer Fusion Mitigates Hallucination in Multimodal LLMs
-- **arXiv**: http://arxiv.org/abs/2601.03100v1
+### Diffusion-DRF: Differentiable Reward Flow for Video Diffusion Fine-Tuning
+- **arXiv**: http://arxiv.org/abs/2601.04153v1
 - **Summary**:
-  - Multimodal large language models (MLLMs) typically rely on a single late-layer feature from a frozen vision encoder, leaving the encoder's rich hierarchy of visual cues under-utilized.
-  - MLLMs still suffer from visually ungrounded hallucinations, often relying on language priors rather than image evidence.
+  - Direct Preference Optimization (DPO) has recently improved Text-to-Video (T2V) generation by enhancing visual fidelity and text alignment.
+  - However, current methods rely on non-differentiable preference signals from human annotations or learned reward models.
 
-### Motion Blur Robust Wheat Pest Damage Detection with Dynamic Fuzzy Feature Fusion
-- **arXiv**: http://arxiv.org/abs/2601.03046v1
+### CLAP: Contrastive Latent Action Pretraining for Learning Vision-Language-Action Models from Human Videos
+- **arXiv**: http://arxiv.org/abs/2601.04061v1
 - **Summary**:
-  - Motion blur caused by camera shake produces ghosting artifacts that substantially degrade edge side object detection.
-  - Existing approaches either suppress blur as noise and lose discriminative structure, or apply full image restoration that increases latency and limits deployment on resource constrained devices.
+  - Generalist Vision-Language-Action models are currently hindered by the scarcity of robotic data compared to the abundance of human video demonstrations.
+  - Existing Latent Action Models attempt to leverage video data but often suffer from visual entanglement, capturing noise rather than manipulation skills.
 
-### SOP: A Scalable Online Post-Training System for Vision-Language-Action Models
-- **arXiv**: http://arxiv.org/abs/2601.03044v1
+### Stable Language Guidance for Vision-Language-Action Models
+- **arXiv**: http://arxiv.org/abs/2601.04052v1
 - **Summary**:
-  - Vision-language-action (VLA) models achieve strong generalization through large-scale pre-training, but real-world deployment requires expert-level task proficiency in addition to broad generality.
-  - Existing post-training approaches for VLA models are typically offline, single-robot, or task-specific, limiting effective on-policy adaptation and scalable learning from real-world interaction.
+  - Vision-Language-Action (VLA) models have demonstrated impressive capabilities in generalized robotic control; however, they remain notoriously brittle to linguistic perturbations.
+  - We identify a critical ``modality collapse'' phenomenon where strong visual priors overwhelm sparse linguistic signals, causing agents to overfit to specific instruction phrasings while ignoring the underlying semantic intent.
 
-### PiDR: Physics-Informed Inertial Dead Reckoning for Autonomous Platforms
-- **arXiv**: http://arxiv.org/abs/2601.03040v1
+### CoINS: Counterfactual Interactive Navigation via Skill-Aware VLM
+- **arXiv**: http://arxiv.org/abs/2601.03956v1
 - **Summary**:
-  - A fundamental requirement for full autonomy is the ability to sustain accurate navigation in the absence of external data, such as GNSS signals or visual information.
-  - In these challenging environments, the platform must rely exclusively on inertial sensors, leading to pure inertial navigation.
+  - Recent Vision-Language Models (VLMs) have demonstrated significant potential in robotic planning.
+  - However, they typically function as semantic reasoners, lacking an intrinsic understanding of the specific robot's physical capabilities.
 
-### Learning to Act Robustly with View-Invariant Latent Actions
-- **arXiv**: http://arxiv.org/abs/2601.02994v1
+### ResTok: Learning Hierarchical Residuals in 1D Visual Tokenizers for Autoregressive Image Generation
+- **arXiv**: http://arxiv.org/abs/2601.03955v1
 - **Summary**:
-  - Vision-based robotic policies often struggle with even minor viewpoint changes, underscoring the need for view-invariant visual representations.
-  - This challenge becomes more pronounced in real-world settings, where viewpoint variability is unavoidable and can significantly disrupt policy performance.
+  - Existing 1D visual tokenizers for autoregressive (AR) generation largely follow the design principles of language modeling, as they are built directly upon transformers whose priors originate in language, yielding single-hierarchy latent tokens and treating visual data as flat sequential token streams.
+  - However, this language-like formulation overlooks key properties of vision, particularly the hierarchical and residual network designs that have long been essential for convergence and efficiency in visual models.
+
+### FocusUI: Efficient UI Grounding via Position-Preserving Visual Token Selection
+- **arXiv**: http://arxiv.org/abs/2601.03928v1
+- **Summary**:
+  - Vision-Language Models (VLMs) have shown remarkable performance in User Interface (UI) grounding tasks, driven by their ability to process increasingly high-resolution screenshots.
+  - However, screenshots are tokenized into thousands of visual tokens (e.g., about 4700 for 2K resolution), incurring significant computational overhead and diluting attention.
+
+### An Event-Based Opto-Tactile Skin
+- **arXiv**: http://arxiv.org/abs/2601.03907v1
+- **Summary**:
+  - This paper presents a neuromorphic, event-driven tactile sensing system for soft, large-area skin, based on the Dynamic Vision Sensors (DVS) integrated with a flexible silicone optical waveguide skin.
+  - Instead of repetitively scanning embedded photoreceivers, this design uses a stereo vision setup comprising two DVS cameras looking sideways through the skin.
+
+### A Comparative Study of 3D Model Acquisition Methods for Synthetic Data Generation of Agricultural Products
+- **arXiv**: http://arxiv.org/abs/2601.03784v1
+- **Summary**:
+  - In the manufacturing industry, computer vision systems based on artificial intelligence (AI) are widely used to reduce costs and increase production.
+  - Training these AI models requires a large amount of training data that is costly to acquire and annotate, especially in high-variance, low-volume manufacturing environments.
+
+### PointWorld: Scaling 3D World Models for In-The-Wild Robotic Manipulation
+- **arXiv**: http://arxiv.org/abs/2601.03782v1
+- **Summary**:
+  - Humans anticipate, from a glance and a contemplated action of their bodies, how the 3D world will respond, a capability that is equally vital for robotic manipulation.
+  - We introduce PointWorld, a large pre-trained 3D world model that unifies state and action in a shared 3D space as 3D point flows: given one or few RGB-D images and a sequence of low-level robot action commands, PointWorld forecasts per-pixel displacements in 3D that respond to the given actions.
 
 <!-- END:vision_ro -->
