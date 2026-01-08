@@ -4,9 +4,12 @@ import requests
 import re
 from datetime import datetime
 from xml.etree import ElementTree as ET
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 SEEN_ARXIV_IDS = set()
-ARXIV_API = "http://export.arxiv.org/api/query"
+ARXIV_API = "https://export.arxiv.org/api/query"  # HTTPS に変更
+
 
 def extract_arxiv_id(link: str):
     """
@@ -22,6 +25,24 @@ def load_config(path):
         return yaml.safe_load(f)
 
 
+def _create_session():
+    """Retry 付き requests.Session"""
+    session = requests.Session()
+
+    retry = Retry(
+        total=5,
+        backoff_factor=2,  # 2,4,8,16 秒
+        status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=["GET"],
+        raise_on_status=False,
+    )
+
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount("https://", adapter)
+
+    return session
+
+
 def fetch_arxiv(categories, max_results):
     query = " OR ".join([f"cat:{c}" for c in categories])
 
@@ -32,9 +53,25 @@ def fetch_arxiv(categories, max_results):
         "max_results": max_results,
     }
 
-    r = requests.get(ARXIV_API, params=params, timeout=30)
-    r.raise_for_status()
-    return r.text
+    session = _create_session()
+
+    try:
+        r = session.get(
+            ARXIV_API,
+            params=params,
+            timeout=(10, 60),  # (connect, read)
+        )
+        r.raise_for_status()
+        return r.text
+
+    except requests.exceptions.ReadTimeout:
+        print("[WARN] arXiv API read timeout – skipping fetch")
+        return ""
+
+    except requests.exceptions.RequestException as e:
+        print(f"[WARN] arXiv API request failed: {e}")
+        return ""
+
 
 def summarize_abstract_first_n(abstract: str, n: int = 2):
     """
@@ -49,6 +86,9 @@ def summarize_abstract_first_n(abstract: str, n: int = 2):
 
 
 def parse_entries(xml_text):
+    if not xml_text:
+        return []
+
     ns = {"a": "http://www.w3.org/2005/Atom"}
     root = ET.fromstring(xml_text)
     entries = []
@@ -93,6 +133,7 @@ def apply_filter(entries, flt):
 
     return result
 
+
 def deduplicate_by_first_seen(entries):
     deduped = []
 
@@ -102,7 +143,7 @@ def deduplicate_by_first_seen(entries):
             continue
 
         if arxiv_id in SEEN_ARXIV_IDS:
-            continue  # すでに別分野で採用済み
+            continue
 
         SEEN_ARXIV_IDS.add(arxiv_id)
         deduped.append(e)
@@ -122,7 +163,7 @@ def build_markdown(entries):
         for s in summary_lines:
             lines.append(f"  - {s}")
 
-        lines.append("")  # 空行
+        lines.append("")
 
     return "\n".join(lines) if lines else "_No papers found._"
 
@@ -155,7 +196,6 @@ def update_readme(tag, md_block):
 
 def main(cfg_path):
     cfg = load_config(cfg_path)
-
     query_cfg = cfg["query"]
 
     if "categories" in query_cfg:
