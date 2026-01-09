@@ -1,6 +1,6 @@
 # arXiv Daily Papers
 
-_Last updated: 2026-01-08_
+_Last updated: 2026-01-09_
 
 ---
 
@@ -11,132 +11,144 @@ _No papers found._
 
 ## Large Language Models
 <!-- START:llm -->
-### All That Glisters Is Not Gold: A Benchmark for Reference-Free Counterfactual Financial Misinformation Detection
-- **arXiv**: http://arxiv.org/abs/2601.04160v1
+### RelayLLM: Efficient Reasoning via Collaborative Decoding
+- **arXiv**: http://arxiv.org/abs/2601.05167v1
 - **Summary**:
-  - We introduce RFC Bench, a benchmark for evaluating large language models on financial misinformation under realistic news.
-  - RFC Bench operates at the paragraph level and captures the contextual complexity of financial news where meaning emerges from dispersed cues.
+  - Large Language Models (LLMs) for complex reasoning is often hindered by high computational costs and latency, while resource-efficient Small Language Models (SLMs) typically lack the necessary reasoning capacity.
+  - Existing collaborative approaches, such as cascading or routing, operate at a coarse granularity by offloading entire queries to LLMs, resulting in significant computational waste when the SLM is capable of handling the majority of reasoning steps.
 
-### KDCM: Reducing Hallucination in LLMs through Explicit Reasoning Structures
-- **arXiv**: http://arxiv.org/abs/2601.04086v1
+### Agent-as-a-Judge
+- **arXiv**: http://arxiv.org/abs/2601.05111v1
 - **Summary**:
-  - To mitigate hallucinations in large language models (LLMs), we propose a framework that focuses on errors induced by prompts.
-  - Our method extends a chain-style knowledge distillation approach by incorporating a programmable module that guides knowledge graph exploration.
+  - LLM-as-a-Judge has revolutionized AI evaluation by leveraging large language models for scalable assessments.
+  - However, as evaluands become increasingly complex, specialized, and multi-step, the reliability of LLM-as-a-Judge has become constrained by inherent biases, shallow single-pass reasoning, and the inability to verify assessments against real-world observations.
 
-### Modular Prompt Optimization: Optimizing Structured Prompts with Section-Local Textual Gradients
-- **arXiv**: http://arxiv.org/abs/2601.04055v1
+### Token-Level LLM Collaboration via FusionRoute
+- **arXiv**: http://arxiv.org/abs/2601.05106v1
 - **Summary**:
-  - Prompt quality plays a central role in controlling the behavior, reliability, and reasoning performance of large language models (LLMs), particularly for smaller open-source instruction-tuned models that depend heavily on explicit structure.
-  - While recent work has explored automatic prompt optimization using textual gradients and self-refinement, most existing methods treat prompts as monolithic blocks of text, making it difficult to localize errors, preserve critical instructions, or prevent uncontrolled prompt growth.
+  - Large language models (LLMs) exhibit strengths across diverse domains.
+  - However, achieving strong performance across these domains with a single general-purpose model typically requires scaling to sizes that are prohibitively expensive to train and deploy.
 
-### Benchmark^2: Systematic Evaluation of LLM Benchmarks
-- **arXiv**: http://arxiv.org/abs/2601.03986v1
+### Reinforced Efficient Reasoning via Semantically Diverse Exploration
+- **arXiv**: http://arxiv.org/abs/2601.05053v1
 - **Summary**:
-  - The rapid proliferation of benchmarks for evaluating large language models (LLMs) has created an urgent need for systematic methods to assess benchmark quality itself.
-  - We propose Benchmark^2, a comprehensive framework comprising three complementary metrics: (1) Cross-Benchmark Ranking Consistency, measuring whether a benchmark produces model rankings aligned with peer benchmarks; (2) Discriminability Score, quantifying a benchmark's ability to differentiate between models; and (3) Capability Alignment Deviation, identifying problematic instances where stronger models fail but weaker models succeed within the same model family.
+  - Reinforcement learning with verifiable rewards (RLVR) has proven effective in enhancing the reasoning of large language models (LLMs).
+  - Monte Carlo Tree Search (MCTS)-based extensions improve upon vanilla RLVR (e.g., GRPO) by providing tree-based reasoning rollouts that enable fine-grained and segment-level credit assignment.
 
-### Large-Scale Aspect-Based Sentiment Analysis with Reasoning-Infused LLMs
-- **arXiv**: http://arxiv.org/abs/2601.03940v1
+### Hán Dān Xué Bù (Mimicry) or Qīng Chū Yú Lán (Mastery)? A Cognitive Perspective on Reasoning Distillation in Large Language Models
+- **arXiv**: http://arxiv.org/abs/2601.05019v1
 - **Summary**:
-  - We introduce Arctic-ABSA, a collection of powerful models for real-life aspect-based sentiment analysis (ABSA).
-  - Our models are tailored to commercial needs, trained on a large corpus of public data alongside carefully generated synthetic data, resulting in a dataset 20 times larger than SemEval14.
+  - Recent Large Reasoning Models trained via reinforcement learning exhibit a "natural" alignment with human cognitive costs.
+  - However, we show that the prevailing paradigm of reasoning distillation -- training student models to mimic these traces via Supervised Fine-Tuning (SFT) -- fails to transmit this cognitive structure.
 
-### Adaptive-Boundary-Clipping GRPO: Ensuring Bounded Ratios for Stable and Generalizable Training
-- **arXiv**: http://arxiv.org/abs/2601.03895v1
+### Text as a Universal Interface for Transferable Personalization
+- **arXiv**: http://arxiv.org/abs/2601.04963v1
 - **Summary**:
-  - Group Relative Policy Optimization (GRPO) has emerged as a popular algorithm for reinforcement learning with large language models (LLMs).
-  - However, upon analyzing its clipping mechanism, we argue that it is suboptimal in certain scenarios.
+  - We study the problem of personalization in large language models (LLMs).
+  - Prior work predominantly represents user preferences as implicit, model-specific vectors or parameters, yielding opaque ``black-box'' profiles that are difficult to interpret and transfer across models and tasks.
+
+### GenProve: Learning to Generate Text with Fine-Grained Provenance
+- **arXiv**: http://arxiv.org/abs/2601.04932v1
+- **Summary**:
+  - Large language models (LLM) often hallucinate, and while adding citations is a common solution, it is frequently insufficient for accountability as users struggle to verify how a cited source supports a generated claim.
+  - Existing methods are typically coarse-grained and fail to distinguish between direct quotes and complex reasoning.
 
 <!-- END:llm -->
 
 ## Multimodal (MLLM)
 <!-- START:mllm -->
-### Scanner-Induced Domain Shifts Undermine the Robustness of Pathology Foundation Models
-- **arXiv**: http://arxiv.org/abs/2601.04163v1
+### RoboVIP: Multi-View Video Generation with Visual Identity Prompting Augments Robot Manipulation
+- **arXiv**: http://arxiv.org/abs/2601.05241v1
 - **Summary**:
-  - Pathology foundation models (PFMs) have become central to computational pathology, aiming to offer general encoders for feature extraction from whole-slide images (WSIs).
-  - Despite strong benchmark performance, PFM robustness to real-world technical domain shifts, such as variability from whole-slide scanner devices, remains poorly understood.
+  - The diversity, quantity, and quality of manipulation data are critical for training effective robot policies.
+  - However, due to hardware and physical setup constraints, collecting large-scale real-world manipulation data remains difficult to scale across diverse environments.
 
-### Diffusion-DRF: Differentiable Reward Flow for Video Diffusion Fine-Tuning
-- **arXiv**: http://arxiv.org/abs/2601.04153v1
+### Mechanisms of Prompt-Induced Hallucination in Vision-Language Models
+- **arXiv**: http://arxiv.org/abs/2601.05201v1
 - **Summary**:
-  - Direct Preference Optimization (DPO) has recently improved Text-to-Video (T2V) generation by enhancing visual fidelity and text alignment.
-  - However, current methods rely on non-differentiable preference signals from human annotations or learned reward models.
+  - Large vision-language models (VLMs) are highly capable, yet often hallucinate by favoring textual prompts over visual evidence.
+  - We study this failure mode in a controlled object-counting setting, where the prompt overstates the number of objects in the image (e.g., asking a model to describe four waterlilies when only three are present).
 
-### GeoReason: Aligning Thinking And Answering In Remote Sensing Vision-Language Models Via Logical Consistency Reinforcement Learning
-- **arXiv**: http://arxiv.org/abs/2601.04118v1
+### Vision-Language Introspection: Mitigating Overconfident Hallucinations in MLLMs via Interpretable Bi-Causal Steering
+- **arXiv**: http://arxiv.org/abs/2601.05159v1
 - **Summary**:
-  - The evolution of Remote Sensing Vision-Language Models(RS-VLMs) emphasizes the importance of transitioning from perception-centric recognition toward high-level deductive reasoning to enhance cognitive reliability in complex spatial tasks.
-  - However, current models often suffer from logical hallucinations, where correct answers are derived from flawed reasoning chains or rely on positional shortcuts rather than spatial logic.
+  - Object hallucination critically undermines the reliability of Multimodal Large Language Models, often stemming from a fundamental failure in cognitive introspection, where models blindly trust linguistic priors over specific visual evidence.
+  - Existing mitigations remain limited: contrastive decoding approaches operate superficially without rectifying internal semantic misalignments, while current latent steering methods rely on static vectors that lack instance-specific precision.
 
-### CLAP: Contrastive Latent Action Pretraining for Learning Vision-Language-Action Models from Human Videos
-- **arXiv**: http://arxiv.org/abs/2601.04061v1
+### A Lightweight and Explainable Vision-Language Framework for Crop Disease Visual Question Answering
+- **arXiv**: http://arxiv.org/abs/2601.05143v1
 - **Summary**:
-  - Generalist Vision-Language-Action models are currently hindered by the scarcity of robotic data compared to the abundance of human video demonstrations.
-  - Existing Latent Action Models attempt to leverage video data but often suffer from visual entanglement, capturing noise rather than manipulation skills.
+  - Visual question answering for crop disease analysis requires accurate visual understanding and reliable language generation.
+  - This work presents a lightweight vision-language framework for crop and disease identification from leaf images.
 
-### FocusUI: Efficient UI Grounding via Position-Preserving Visual Token Selection
-- **arXiv**: http://arxiv.org/abs/2601.03928v1
+### VERSE: Visual Embedding Reduction and Space Exploration. Clustering-Guided Insights for Training Data Enhancement in Visually-Rich Document Understanding
+- **arXiv**: http://arxiv.org/abs/2601.05125v1
 - **Summary**:
-  - Vision-Language Models (VLMs) have shown remarkable performance in User Interface (UI) grounding tasks, driven by their ability to process increasingly high-resolution screenshots.
-  - However, screenshots are tokenized into thousands of visual tokens (e.g., about 4700 for 2K resolution), incurring significant computational overhead and diluting attention.
+  - This work introduces VERSE, a methodology for analyzing and improving Vision-Language Models applied to Visually-rich Document Understanding by exploring their visual embedding space.
+  - VERSE enables the visualization of latent representations, supporting the assessment of model feasibility.
 
 <!-- END:mllm -->
 
 ## Vision + Robotics
 <!-- START:vision_ro -->
-### Diffusion-DRF: Differentiable Reward Flow for Video Diffusion Fine-Tuning
-- **arXiv**: http://arxiv.org/abs/2601.04153v1
+### QNeRF: Neural Radiance Fields on a Simulated Gate-Based Quantum Computer
+- **arXiv**: http://arxiv.org/abs/2601.05250v1
 - **Summary**:
-  - Direct Preference Optimization (DPO) has recently improved Text-to-Video (T2V) generation by enhancing visual fidelity and text alignment.
-  - However, current methods rely on non-differentiable preference signals from human annotations or learned reward models.
+  - Recently, Quantum Visual Fields (QVFs) have shown promising improvements in model compactness and convergence speed for learning the provided 2D or 3D signals.
+  - Meanwhile, novel-view synthesis has seen major advances with Neural Radiance Fields (NeRFs), where models learn a compact representation from 2D images to render 3D scenes, albeit at the cost of larger models and intensive training.
 
-### CLAP: Contrastive Latent Action Pretraining for Learning Vision-Language-Action Models from Human Videos
-- **arXiv**: http://arxiv.org/abs/2601.04061v1
+### LaST$_{0}$: Latent Spatio-Temporal Chain-of-Thought for Robotic Vision-Language-Action Model
+- **arXiv**: http://arxiv.org/abs/2601.05248v1
 - **Summary**:
-  - Generalist Vision-Language-Action models are currently hindered by the scarcity of robotic data compared to the abundance of human video demonstrations.
-  - Existing Latent Action Models attempt to leverage video data but often suffer from visual entanglement, capturing noise rather than manipulation skills.
+  - Vision-Language-Action (VLA) models have recently demonstrated strong generalization capabilities in robotic manipulation.
+  - Some existing VLA approaches attempt to improve action accuracy by explicitly generating linguistic reasoning traces or future visual observations before action execution.
 
-### Stable Language Guidance for Vision-Language-Action Models
-- **arXiv**: http://arxiv.org/abs/2601.04052v1
+### Pixel-Perfect Visual Geometry Estimation
+- **arXiv**: http://arxiv.org/abs/2601.05246v1
 - **Summary**:
-  - Vision-Language-Action (VLA) models have demonstrated impressive capabilities in generalized robotic control; however, they remain notoriously brittle to linguistic perturbations.
-  - We identify a critical ``modality collapse'' phenomenon where strong visual priors overwhelm sparse linguistic signals, causing agents to overfit to specific instruction phrasings while ignoring the underlying semantic intent.
+  - Recovering clean and accurate geometry from images is essential for robotics and augmented reality.
+  - However, existing geometry foundation models still suffer severely from flying pixels and the loss of fine details.
 
-### CoINS: Counterfactual Interactive Navigation via Skill-Aware VLM
-- **arXiv**: http://arxiv.org/abs/2601.03956v1
+### RoboVIP: Multi-View Video Generation with Visual Identity Prompting Augments Robot Manipulation
+- **arXiv**: http://arxiv.org/abs/2601.05241v1
 - **Summary**:
-  - Recent Vision-Language Models (VLMs) have demonstrated significant potential in robotic planning.
-  - However, they typically function as semantic reasoners, lacking an intrinsic understanding of the specific robot's physical capabilities.
+  - The diversity, quantity, and quality of manipulation data are critical for training effective robot policies.
+  - However, due to hardware and physical setup constraints, collecting large-scale real-world manipulation data remains difficult to scale across diverse environments.
 
-### ResTok: Learning Hierarchical Residuals in 1D Visual Tokenizers for Autoregressive Image Generation
-- **arXiv**: http://arxiv.org/abs/2601.03955v1
+### Mechanisms of Prompt-Induced Hallucination in Vision-Language Models
+- **arXiv**: http://arxiv.org/abs/2601.05201v1
 - **Summary**:
-  - Existing 1D visual tokenizers for autoregressive (AR) generation largely follow the design principles of language modeling, as they are built directly upon transformers whose priors originate in language, yielding single-hierarchy latent tokens and treating visual data as flat sequential token streams.
-  - However, this language-like formulation overlooks key properties of vision, particularly the hierarchical and residual network designs that have long been essential for convergence and efficiency in visual models.
+  - Large vision-language models (VLMs) are highly capable, yet often hallucinate by favoring textual prompts over visual evidence.
+  - We study this failure mode in a controlled object-counting setting, where the prompt overstates the number of objects in the image (e.g., asking a model to describe four waterlilies when only three are present).
 
-### FocusUI: Efficient UI Grounding via Position-Preserving Visual Token Selection
-- **arXiv**: http://arxiv.org/abs/2601.03928v1
+### Vision-Language Introspection: Mitigating Overconfident Hallucinations in MLLMs via Interpretable Bi-Causal Steering
+- **arXiv**: http://arxiv.org/abs/2601.05159v1
 - **Summary**:
-  - Vision-Language Models (VLMs) have shown remarkable performance in User Interface (UI) grounding tasks, driven by their ability to process increasingly high-resolution screenshots.
-  - However, screenshots are tokenized into thousands of visual tokens (e.g., about 4700 for 2K resolution), incurring significant computational overhead and diluting attention.
+  - Object hallucination critically undermines the reliability of Multimodal Large Language Models, often stemming from a fundamental failure in cognitive introspection, where models blindly trust linguistic priors over specific visual evidence.
+  - Existing mitigations remain limited: contrastive decoding approaches operate superficially without rectifying internal semantic misalignments, while current latent steering methods rely on static vectors that lack instance-specific precision.
 
-### An Event-Based Opto-Tactile Skin
-- **arXiv**: http://arxiv.org/abs/2601.03907v1
+### A Lightweight and Explainable Vision-Language Framework for Crop Disease Visual Question Answering
+- **arXiv**: http://arxiv.org/abs/2601.05143v1
 - **Summary**:
-  - This paper presents a neuromorphic, event-driven tactile sensing system for soft, large-area skin, based on the Dynamic Vision Sensors (DVS) integrated with a flexible silicone optical waveguide skin.
-  - Instead of repetitively scanning embedded photoreceivers, this design uses a stereo vision setup comprising two DVS cameras looking sideways through the skin.
+  - Visual question answering for crop disease analysis requires accurate visual understanding and reliable language generation.
+  - This work presents a lightweight vision-language framework for crop and disease identification from leaf images.
 
-### A Comparative Study of 3D Model Acquisition Methods for Synthetic Data Generation of Agricultural Products
-- **arXiv**: http://arxiv.org/abs/2601.03784v1
+### VERSE: Visual Embedding Reduction and Space Exploration. Clustering-Guided Insights for Training Data Enhancement in Visually-Rich Document Understanding
+- **arXiv**: http://arxiv.org/abs/2601.05125v1
 - **Summary**:
-  - In the manufacturing industry, computer vision systems based on artificial intelligence (AI) are widely used to reduce costs and increase production.
-  - Training these AI models requires a large amount of training data that is costly to acquire and annotate, especially in high-variance, low-volume manufacturing environments.
+  - This work introduces VERSE, a methodology for analyzing and improving Vision-Language Models applied to Visually-rich Document Understanding by exploring their visual embedding space.
+  - VERSE enables the visualization of latent representations, supporting the assessment of model feasibility.
 
-### PointWorld: Scaling 3D World Models for In-The-Wild Robotic Manipulation
-- **arXiv**: http://arxiv.org/abs/2601.03782v1
+### UniLiPs: Unified LiDAR Pseudo-Labeling with Geometry-Grounded Dynamic Scene Decomposition
+- **arXiv**: http://arxiv.org/abs/2601.05105v1
 - **Summary**:
-  - Humans anticipate, from a glance and a contemplated action of their bodies, how the 3D world will respond, a capability that is equally vital for robotic manipulation.
-  - We introduce PointWorld, a large pre-trained 3D world model that unifies state and action in a shared 3D space as 3D point flows: given one or few RGB-D images and a sequence of low-level robot action commands, PointWorld forecasts per-pixel displacements in 3D that respond to the given actions.
+  - Unlabeled LiDAR logs, in autonomous driving applications, are inherently a gold mine of dense 3D geometry hiding in plain sight - yet they are almost useless without human labels, highlighting a dominant cost barrier for autonomous-perception research.
+  - In this work we tackle this bottleneck by leveraging temporal-geometric consistency across LiDAR sweeps to lift and fuse cues from text and 2D vision foundation models directly into 3D, without any manual input.
+
+### From Understanding to Engagement: Personalized pharmacy Video Clips via Vision Language Models (VLMs)
+- **arXiv**: http://arxiv.org/abs/2601.05059v1
+- **Summary**:
+  - Vision Language Models (VLMs) are poised to revolutionize the digital transformation of pharmacyceutical industry by enabling intelligent, scalable, and automated multi-modality content processing.
+  - Traditional manual annotation of heterogeneous data modalities (text, images, video, audio, and web links), is prone to inconsistencies, quality degradation, and inefficiencies in content utilization.
 
 <!-- END:vision_ro -->
